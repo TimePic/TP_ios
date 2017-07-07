@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE148E3C1F0F1320001C8221 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE148E3B1F0F1320001C8221 /* AppDelegate.swift */; };
+		BE148E3E1F0F1320001C8221 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE148E3D1F0F1320001C8221 /* ViewController.swift */; };
+		BE148E411F0F1320001C8221 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE148E3F1F0F1320001C8221 /* Main.storyboard */; };
+		BE148E431F0F1320001C8221 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE148E421F0F1320001C8221 /* Assets.xcassets */; };
+		BE148E461F0F1320001C8221 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE148E441F0F1320001C8221 /* LaunchScreen.storyboard */; };
+		BE148E511F0F1320001C8221 /* TotoroTalkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE148E501F0F1320001C8221 /* TotoroTalkTests.swift */; };
+		BE148E5C1F0F1320001C8221 /* TotoroTalkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE148E5B1F0F1320001C8221 /* TotoroTalkUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BE148E4D1F0F1320001C8221 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE148E301F0F131F001C8221 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE148E371F0F131F001C8221;
+			remoteInfo = TotoroTalk;
+		};
+		BE148E581F0F1320001C8221 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE148E301F0F131F001C8221 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE148E371F0F131F001C8221;
+			remoteInfo = TotoroTalk;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BE148E381F0F1320001C8221 /* TotoroTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TotoroTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE148E3B1F0F1320001C8221 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BE148E3D1F0F1320001C8221 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BE148E401F0F1320001C8221 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BE148E421F0F1320001C8221 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BE148E451F0F1320001C8221 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BE148E471F0F1320001C8221 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE148E4C1F0F1320001C8221 /* TotoroTalkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TotoroTalkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE148E501F0F1320001C8221 /* TotoroTalkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotoroTalkTests.swift; sourceTree = "<group>"; };
+		BE148E521F0F1320001C8221 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE148E571F0F1320001C8221 /* TotoroTalkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TotoroTalkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE148E5B1F0F1320001C8221 /* TotoroTalkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotoroTalkUITests.swift; sourceTree = "<group>"; };
+		BE148E5D1F0F1320001C8221 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE148E351F0F131F001C8221 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE148E491F0F1320001C8221 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE148E541F0F1320001C8221 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE148E2F1F0F131F001C8221 = {
+			isa = PBXGroup;
+			children = (
+				BE148E3A1F0F1320001C8221 /* TotoroTalk */,
+				BE148E4F1F0F1320001C8221 /* TotoroTalkTests */,
+				BE148E5A1F0F1320001C8221 /* TotoroTalkUITests */,
+				BE148E391F0F1320001C8221 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BE148E391F0F1320001C8221 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE148E381F0F1320001C8221 /* TotoroTalk.app */,
+				BE148E4C1F0F1320001C8221 /* TotoroTalkTests.xctest */,
+				BE148E571F0F1320001C8221 /* TotoroTalkUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE148E3A1F0F1320001C8221 /* TotoroTalk */ = {
+			isa = PBXGroup;
+			children = (
+				BE148E3B1F0F1320001C8221 /* AppDelegate.swift */,
+				BE148E3D1F0F1320001C8221 /* ViewController.swift */,
+				BE148E3F1F0F1320001C8221 /* Main.storyboard */,
+				BE148E421F0F1320001C8221 /* Assets.xcassets */,
+				BE148E441F0F1320001C8221 /* LaunchScreen.storyboard */,
+				BE148E471F0F1320001C8221 /* Info.plist */,
+			);
+			path = TotoroTalk;
+			sourceTree = "<group>";
+		};
+		BE148E4F1F0F1320001C8221 /* TotoroTalkTests */ = {
+			isa = PBXGroup;
+			children = (
+				BE148E501F0F1320001C8221 /* TotoroTalkTests.swift */,
+				BE148E521F0F1320001C8221 /* Info.plist */,
+			);
+			path = TotoroTalkTests;
+			sourceTree = "<group>";
+		};
+		BE148E5A1F0F1320001C8221 /* TotoroTalkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BE148E5B1F0F1320001C8221 /* TotoroTalkUITests.swift */,
+				BE148E5D1F0F1320001C8221 /* Info.plist */,
+			);
+			path = TotoroTalkUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE148E371F0F131F001C8221 /* TotoroTalk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE148E601F0F1320001C8221 /* Build configuration list for PBXNativeTarget "TotoroTalk" */;
+			buildPhases = (
+				BE148E341F0F131F001C8221 /* Sources */,
+				BE148E351F0F131F001C8221 /* Frameworks */,
+				BE148E361F0F131F001C8221 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TotoroTalk;
+			productName = TotoroTalk;
+			productReference = BE148E381F0F1320001C8221 /* TotoroTalk.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BE148E4B1F0F1320001C8221 /* TotoroTalkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE148E631F0F1320001C8221 /* Build configuration list for PBXNativeTarget "TotoroTalkTests" */;
+			buildPhases = (
+				BE148E481F0F1320001C8221 /* Sources */,
+				BE148E491F0F1320001C8221 /* Frameworks */,
+				BE148E4A1F0F1320001C8221 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE148E4E1F0F1320001C8221 /* PBXTargetDependency */,
+			);
+			name = TotoroTalkTests;
+			productName = TotoroTalkTests;
+			productReference = BE148E4C1F0F1320001C8221 /* TotoroTalkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BE148E561F0F1320001C8221 /* TotoroTalkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE148E661F0F1320001C8221 /* Build configuration list for PBXNativeTarget "TotoroTalkUITests" */;
+			buildPhases = (
+				BE148E531F0F1320001C8221 /* Sources */,
+				BE148E541F0F1320001C8221 /* Frameworks */,
+				BE148E551F0F1320001C8221 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE148E591F0F1320001C8221 /* PBXTargetDependency */,
+			);
+			name = TotoroTalkUITests;
+			productName = TotoroTalkUITests;
+			productReference = BE148E571F0F1320001C8221 /* TotoroTalkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE148E301F0F131F001C8221 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = TimePic;
+				TargetAttributes = {
+					BE148E371F0F131F001C8221 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = LPU355R3K7;
+						ProvisioningStyle = Automatic;
+					};
+					BE148E4B1F0F1320001C8221 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = LPU355R3K7;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BE148E371F0F131F001C8221;
+					};
+					BE148E561F0F1320001C8221 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = LPU355R3K7;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BE148E371F0F131F001C8221;
+					};
+				};
+			};
+			buildConfigurationList = BE148E331F0F131F001C8221 /* Build configuration list for PBXProject "TotoroTalk" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BE148E2F1F0F131F001C8221;
+			productRefGroup = BE148E391F0F1320001C8221 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE148E371F0F131F001C8221 /* TotoroTalk */,
+				BE148E4B1F0F1320001C8221 /* TotoroTalkTests */,
+				BE148E561F0F1320001C8221 /* TotoroTalkUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE148E361F0F131F001C8221 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE148E461F0F1320001C8221 /* LaunchScreen.storyboard in Resources */,
+				BE148E431F0F1320001C8221 /* Assets.xcassets in Resources */,
+				BE148E411F0F1320001C8221 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE148E4A1F0F1320001C8221 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE148E551F0F1320001C8221 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE148E341F0F131F001C8221 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE148E3E1F0F1320001C8221 /* ViewController.swift in Sources */,
+				BE148E3C1F0F1320001C8221 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE148E481F0F1320001C8221 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE148E511F0F1320001C8221 /* TotoroTalkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE148E531F0F1320001C8221 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE148E5C1F0F1320001C8221 /* TotoroTalkUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BE148E4E1F0F1320001C8221 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE148E371F0F131F001C8221 /* TotoroTalk */;
+			targetProxy = BE148E4D1F0F1320001C8221 /* PBXContainerItemProxy */;
+		};
+		BE148E591F0F1320001C8221 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE148E371F0F131F001C8221 /* TotoroTalk */;
+			targetProxy = BE148E581F0F1320001C8221 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BE148E3F1F0F1320001C8221 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE148E401F0F1320001C8221 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BE148E441F0F1320001C8221 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE148E451F0F1320001C8221 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BE148E5E1F0F1320001C8221 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BE148E5F1F0F1320001C8221 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE148E611F0F1320001C8221 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LPU355R3K7;
+				INFOPLIST_FILE = TotoroTalk/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.timepic.TotoroTalk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		BE148E621F0F1320001C8221 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LPU355R3K7;
+				INFOPLIST_FILE = TotoroTalk/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.timepic.TotoroTalk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		BE148E641F0F1320001C8221 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = LPU355R3K7;
+				INFOPLIST_FILE = TotoroTalkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.timepic.TotoroTalkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TotoroTalk.app/TotoroTalk";
+			};
+			name = Debug;
+		};
+		BE148E651F0F1320001C8221 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = LPU355R3K7;
+				INFOPLIST_FILE = TotoroTalkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.timepic.TotoroTalkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TotoroTalk.app/TotoroTalk";
+			};
+			name = Release;
+		};
+		BE148E671F0F1320001C8221 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = LPU355R3K7;
+				INFOPLIST_FILE = TotoroTalkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.timepic.TotoroTalkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = TotoroTalk;
+			};
+			name = Debug;
+		};
+		BE148E681F0F1320001C8221 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = LPU355R3K7;
+				INFOPLIST_FILE = TotoroTalkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.timepic.TotoroTalkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = TotoroTalk;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE148E331F0F131F001C8221 /* Build configuration list for PBXProject "TotoroTalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE148E5E1F0F1320001C8221 /* Debug */,
+				BE148E5F1F0F1320001C8221 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE148E601F0F1320001C8221 /* Build configuration list for PBXNativeTarget "TotoroTalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE148E611F0F1320001C8221 /* Debug */,
+				BE148E621F0F1320001C8221 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BE148E631F0F1320001C8221 /* Build configuration list for PBXNativeTarget "TotoroTalkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE148E641F0F1320001C8221 /* Debug */,
+				BE148E651F0F1320001C8221 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BE148E661F0F1320001C8221 /* Build configuration list for PBXNativeTarget "TotoroTalkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE148E671F0F1320001C8221 /* Debug */,
+				BE148E681F0F1320001C8221 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BE148E301F0F131F001C8221 /* Project object */;
+}
