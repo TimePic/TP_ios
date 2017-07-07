@@ -97,11 +97,11 @@
 		BE148E3A1F0F1320001C8221 /* TotoroTalk */ = {
 			isa = PBXGroup;
 			children = (
+				BE148E6C1F0F1D53001C8221 /* Sotryboards */,
+				BE148E6A1F0F1BE1001C8221 /* Resources */,
+				BE148E691F0F15E4001C8221 /* ViewControllers */,
 				BE148E3B1F0F1320001C8221 /* AppDelegate.swift */,
-				BE148E3D1F0F1320001C8221 /* ViewController.swift */,
-				BE148E3F1F0F1320001C8221 /* Main.storyboard */,
 				BE148E421F0F1320001C8221 /* Assets.xcassets */,
-				BE148E441F0F1320001C8221 /* LaunchScreen.storyboard */,
 				BE148E471F0F1320001C8221 /* Info.plist */,
 			);
 			path = TotoroTalk;
@@ -123,6 +123,38 @@
 				BE148E5D1F0F1320001C8221 /* Info.plist */,
 			);
 			path = TotoroTalkUITests;
+			sourceTree = "<group>";
+		};
+		BE148E691F0F15E4001C8221 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BE148E3D1F0F1320001C8221 /* ViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		BE148E6A1F0F1BE1001C8221 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BE148E6B1F0F1BF4001C8221 /* Sounds */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		BE148E6B1F0F1BF4001C8221 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
+		BE148E6C1F0F1D53001C8221 /* Sotryboards */ = {
+			isa = PBXGroup;
+			children = (
+				BE148E3F1F0F1320001C8221 /* Main.storyboard */,
+				BE148E441F0F1320001C8221 /* LaunchScreen.storyboard */,
+			);
+			name = Sotryboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

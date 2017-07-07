@@ -9,6 +9,11 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    //MARK: Properties
+    
+    @IBOutlet weak var wakeButton: UIButton!
+    @IBOutlet weak var sleepButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +24,21 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    //MARK: Actions
+    
+    @IBAction func playSound(_ sender: UIButton) {
+        
+        switch sender {
+        case wakeButton:
+            print("wakeButton")
+        case sleepButton:
+            print("sleepButton")
+        default:
+            print("default")
+        }
+    }
+    
 
 }
 
