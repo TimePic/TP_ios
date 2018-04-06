@@ -11,6 +11,7 @@ import UIKit
 @IBDesignable class ViewController: UIViewController {
 
     //MARK: Properties
+    var borderViews = [UIView]()
     
     
     @IBOutlet weak var call_partner: TPSOundButton!
@@ -18,17 +19,12 @@ import UIKit
     @IBOutlet weak var defence: TPSOundButton!
     @IBOutlet weak var dont_hurt_me: TPSOundButton!
     
-    @IBOutlet weak var feed_or_pet_borderView: UIView!
     
     
     @IBOutlet weak var feed_or_pet: TPSOundButton!
     @IBOutlet weak var lone: TPSOundButton!
     @IBOutlet weak var marriage_despute: TPSOundButton!
     @IBOutlet weak var answer_bb: TPSOundButton!
-    
-    
-    
-
     
     @IBOutlet weak var bb_happy: TPSOundButton!
     @IBOutlet weak var bb_ask_care_food: TPSOundButton!
@@ -39,9 +35,32 @@ import UIKit
     @IBOutlet weak var warning: TPSOundButton!
     
     
+    //Mark: BorderViews
+    @IBOutlet weak var call_partner_borderView: UIView!
+    @IBOutlet weak var contact_borderView: UIView!
+    @IBOutlet weak var defence_borderView: UIView!
+    @IBOutlet weak var dont_hurt_me_borderView: UIView!
+    
+    @IBOutlet weak var feed_or_pet_borderView: UIView!
+    @IBOutlet weak var lone_borderView: UIView!
+    @IBOutlet weak var marriage_depute_borderView: UIView!
+    @IBOutlet weak var answer_bb_borderView: UIView!
+    
+    @IBOutlet weak var bb_happy_borderView: UIView!
+    @IBOutlet weak var bb_ask_care_food_borderView: UIView!
+    @IBOutlet weak var bb_sleepy_borderView: UIView!
+    @IBOutlet weak var bb_wakeup_borderView: UIView!
+    
+    @IBOutlet weak var protest_borderView: UIView!
+    @IBOutlet weak var warning_borderView: UIView!
+
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         initUIButtons();
+        initBorders();
 
     }
     
@@ -58,7 +77,37 @@ import UIKit
     
     
     
+    func initBorders() {
+        borderViews.append(call_partner_borderView)
+        borderViews.append(contact_borderView)
+        borderViews.append(defence_borderView)
+        borderViews.append(dont_hurt_me_borderView)
+        
+        borderViews.append(feed_or_pet_borderView)
+        borderViews.append(lone_borderView)
+        borderViews.append(marriage_depute_borderView)
+        borderViews.append(answer_bb_borderView)
+        
+        borderViews.append(bb_happy_borderView)
+        borderViews.append(bb_ask_care_food_borderView)
+        borderViews.append(bb_sleepy_borderView)
+        borderViews.append(bb_wakeup_borderView)
+        
+        borderViews.append(protest_borderView)
+        borderViews.append(warning_borderView)
+        
+        for borderView in borderViews {
+            borderView.layer.borderWidth = 1.0;
+            borderView.layer.borderColor = UIColor.lightGray.cgColor;
     
+            borderView.layer.cornerRadius = 0.5 * borderView.bounds.size.width
+            borderView.clipsToBounds = true
+    
+            borderView.layer.cornerRadius = 10.0;
+            
+        }
+        
+    }
 
     
     func initUIButtons(){
@@ -78,17 +127,7 @@ import UIKit
         
         feed_or_pet.tag = BaseConstants.tags.UIButton_feed_or_pet;
         feed_or_pet.setUILabelText("Ask Feed or Pet")
-        
-        feed_or_pet_borderView.layer.borderWidth = 1.0;
-        feed_or_pet_borderView.layer.borderColor = UIColor.lightGray.cgColor;
-        
-        feed_or_pet_borderView.layer.cornerRadius = 0.5 * feed_or_pet_borderView.bounds.size.width
-        feed_or_pet_borderView.clipsToBounds = true
-        
-        feed_or_pet_borderView.layer.cornerRadius = 10.0;
-        
-        
-        
+
         lone.tag = BaseConstants.tags.UIButton_lone;
         lone.setUILabelText("Lone")
         

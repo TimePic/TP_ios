@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-@IBDesignable class TPSOundButton: UIStackView {
+@IBDesignable class TPSOundButton: UIStackView, AVAudioPlayerDelegate{
 //MARK: Properties
     @IBInspectable var ButtonSize: CGSize = CGSize(width: 100.0, height: 100.0) {
         didSet {
@@ -57,6 +57,9 @@ import AVFoundation
     }
     
 //MARK: Methods
+    private func setupPlayer(){
+        player?.delegate = self
+    }
     private func setupButtons() {
         
         // Clear the button
@@ -82,14 +85,7 @@ import AVFoundation
 
         
         // Style
-        self.layer.borderWidth = 1.0;
-        playButton.layer.borderColor = UIColor.lightGray.cgColor;
-        
-        playButton.layer.cornerRadius = 0.5 * playButton.bounds.size.width
-        playButton.clipsToBounds = true
-        
-        playButton.layer.cornerRadius = 10.0;
-        playButton.contentVerticalAlignment = .bottom;
+        playButton.contentVerticalAlignment = .center;
 
         
         
@@ -155,6 +151,7 @@ import AVFoundation
                     
                     /* The following line is required for the player to work on iOS 11. Change the file type accordingly*/
                     player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
+                    player?.delegate = self;
                     
                     /* iOS 10 and earlier require the following line:
                      player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileTypeMPEGLayer3) */
@@ -174,7 +171,10 @@ import AVFoundation
             print("No sounds matched.");
         }
         
-        
+    }
+    
+    func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
+        stop()
     }
     
 }

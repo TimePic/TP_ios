@@ -28,18 +28,66 @@
                                     <stackView opaque="NO" contentMode="top" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="44J-Wx-NMv">
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="93"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Dvd-Gt-NOj" userLabel="Call Partner" customClass="TPSOundButton" customModule="TotoroTalk" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mbE-Lf-D8w" userLabel="BorderView">
                                                 <rect key="frame" x="0.0" y="0.0" width="66" height="93"/>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3hh-aa-d3A" userLabel="Contact" customClass="TPSOundButton" customModule="TotoroTalk" customModuleProvider="target">
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Dvd-Gt-NOj" userLabel="Call Partner" customClass="TPSOundButton" customModule="TotoroTalk" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="66" height="93"/>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="Dvd-Gt-NOj" secondAttribute="trailing" id="1tp-Qp-Zop"/>
+                                                    <constraint firstItem="Dvd-Gt-NOj" firstAttribute="top" secondItem="mbE-Lf-D8w" secondAttribute="top" id="9Ag-ym-BJR"/>
+                                                    <constraint firstItem="Dvd-Gt-NOj" firstAttribute="leading" secondItem="mbE-Lf-D8w" secondAttribute="leading" id="dIv-iW-X3y"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Dvd-Gt-NOj" secondAttribute="bottom" id="vja-IV-Fd5"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B0H-Hb-paP" userLabel="BorderView">
                                                 <rect key="frame" x="74" y="0.0" width="66" height="93"/>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Vtf-Yk-VPK" userLabel="Defence" customClass="TPSOundButton" customModule="TotoroTalk" customModuleProvider="target">
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3hh-aa-d3A" userLabel="Contact" customClass="TPSOundButton" customModule="TotoroTalk" customModuleProvider="target">
+                                                        <rect key="frame" x="-1" y="0.0" width="67" height="93"/>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="3hh-aa-d3A" secondAttribute="bottom" id="2gd-zk-dOJ"/>
+                                                    <constraint firstItem="3hh-aa-d3A" firstAttribute="top" secondItem="B0H-Hb-paP" secondAttribute="top" id="GPO-Jb-Ypv"/>
+                                                    <constraint firstAttribute="trailing" secondItem="3hh-aa-d3A" secondAttribute="trailing" id="kYx-N9-T4b"/>
+                                                    <constraint firstItem="3hh-aa-d3A" firstAttribute="leading" secondItem="B0H-Hb-paP" secondAttribute="leading" constant="-1" id="vcq-q5-KfF"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EAB-7T-bNP" userLabel="BorderView">
                                                 <rect key="frame" x="148" y="0.0" width="66" height="93"/>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="i4R-rU-baJ" userLabel="Don't Hurt Me" customClass="TPSOundButton" customModule="TotoroTalk" customModuleProvider="target">
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Vtf-Yk-VPK" userLabel="Defence" customClass="TPSOundButton" customModule="TotoroTalk" customModuleProvider="target">
+                                                        <rect key="frame" x="-1" y="0.0" width="67" height="93"/>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="Vtf-Yk-VPK" secondAttribute="bottom" id="7th-uV-1Rz"/>
+                                                    <constraint firstItem="Vtf-Yk-VPK" firstAttribute="top" secondItem="EAB-7T-bNP" secondAttribute="top" id="FrC-U8-Yoq"/>
+                                                    <constraint firstItem="Vtf-Yk-VPK" firstAttribute="leading" secondItem="EAB-7T-bNP" secondAttribute="leading" constant="-1" id="OTz-xa-X3P"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Vtf-Yk-VPK" secondAttribute="trailing" id="xsd-pe-IwO"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UeE-Vz-39O" userLabel="BorderView">
                                                 <rect key="frame" x="222" y="0.0" width="66" height="93"/>
-                                            </stackView>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="i4R-rU-baJ" userLabel="Don't Hurt Me" customClass="TPSOundButton" customModule="TotoroTalk" customModuleProvider="target">
+                                                        <rect key="frame" x="-1" y="0.0" width="67" height="93"/>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="i4R-rU-baJ" secondAttribute="bottom" id="HaY-Ix-HKO"/>
+                                                    <constraint firstAttribute="trailing" secondItem="i4R-rU-baJ" secondAttribute="trailing" id="KeS-I6-jWm"/>
+                                                    <constraint firstItem="i4R-rU-baJ" firstAttribute="top" secondItem="UeE-Vz-39O" secondAttribute="top" id="gjj-Tc-lQ6"/>
+                                                    <constraint firstItem="i4R-rU-baJ" firstAttribute="leading" secondItem="UeE-Vz-39O" secondAttribute="leading" constant="-1" id="woA-BE-2az"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="rCn-h7-PV4">
@@ -49,54 +97,162 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="66" height="93"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7Br-Rf-92z" userLabel="Feed or Pet" customClass="TPSOundButton" customModule="TotoroTalk" customModuleProvider="target">
-                                                        <rect key="frame" x="-1" y="0.0" width="52" height="93"/>
+                                                        <rect key="frame" x="-1" y="0.0" width="67" height="93"/>
                                                     </stackView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstItem="7Br-Rf-92z" firstAttribute="top" secondItem="vI4-e5-W6A" secondAttribute="top" id="7CH-vn-w6P"/>
-                                                    <constraint firstItem="7Br-Rf-92z" firstAttribute="leading" secondItem="vI4-e5-W6A" secondAttribute="leading" constant="-1" id="Jh9-yP-0pr"/>
-                                                    <constraint firstAttribute="bottom" secondItem="7Br-Rf-92z" secondAttribute="bottom" id="NvY-ML-hOH"/>
-                                                    <constraint firstAttribute="trailing" secondItem="7Br-Rf-92z" secondAttribute="trailing" constant="15" id="PqO-Dl-7O2"/>
+                                                    <constraint firstItem="7Br-Rf-92z" firstAttribute="top" secondItem="vI4-e5-W6A" secondAttribute="top" id="FZq-TJ-ofh"/>
+                                                    <constraint firstItem="7Br-Rf-92z" firstAttribute="centerX" secondItem="vI4-e5-W6A" secondAttribute="centerX" id="Jyc-KU-q68"/>
+                                                    <constraint firstAttribute="bottom" secondItem="7Br-Rf-92z" secondAttribute="bottom" id="gLq-im-9v5"/>
+                                                    <constraint firstAttribute="trailing" secondItem="7Br-Rf-92z" secondAttribute="trailing" id="hsO-Xx-0Hk"/>
                                                 </constraints>
                                             </view>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zWG-pc-Cui" userLabel="Lone" customClass="TPSOundButton" customModule="TotoroTalk" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6CH-b1-Y2U" userLabel="BorderView">
                                                 <rect key="frame" x="74" y="0.0" width="66" height="93"/>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hOq-yv-GJf" userLabel="Marriage despute" customClass="TPSOundButton" customModule="TotoroTalk" customModuleProvider="target">
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zWG-pc-Cui" userLabel="Lone" customClass="TPSOundButton" customModule="TotoroTalk" customModuleProvider="target">
+                                                        <rect key="frame" x="-1" y="0.0" width="67" height="93"/>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="zWG-pc-Cui" secondAttribute="trailing" id="4sg-or-kuP"/>
+                                                    <constraint firstAttribute="bottom" secondItem="zWG-pc-Cui" secondAttribute="bottom" id="ca4-ST-Mw4"/>
+                                                    <constraint firstItem="zWG-pc-Cui" firstAttribute="top" secondItem="6CH-b1-Y2U" secondAttribute="top" id="ieU-Nb-Xnv"/>
+                                                    <constraint firstItem="zWG-pc-Cui" firstAttribute="leading" secondItem="6CH-b1-Y2U" secondAttribute="leading" constant="-1" id="wb1-Gy-D9o"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="acH-DA-neX" userLabel="BorderView">
                                                 <rect key="frame" x="148" y="0.0" width="66" height="93"/>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="MFs-ty-uVz" userLabel="Answer_bb" customClass="TPSOundButton" customModule="TotoroTalk" customModuleProvider="target">
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hOq-yv-GJf" userLabel="Marriage despute" customClass="TPSOundButton" customModule="TotoroTalk" customModuleProvider="target">
+                                                        <rect key="frame" x="-1" y="0.0" width="67" height="93"/>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="hOq-yv-GJf" secondAttribute="bottom" id="Cuu-J5-RXo"/>
+                                                    <constraint firstAttribute="trailing" secondItem="hOq-yv-GJf" secondAttribute="trailing" id="RNq-Qz-YmN"/>
+                                                    <constraint firstItem="hOq-yv-GJf" firstAttribute="leading" secondItem="acH-DA-neX" secondAttribute="leading" constant="-1" id="mjg-Ux-s4n"/>
+                                                    <constraint firstItem="hOq-yv-GJf" firstAttribute="top" secondItem="acH-DA-neX" secondAttribute="top" id="xFm-Gf-LQm"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y20-KC-Nxu" userLabel="BorderView">
                                                 <rect key="frame" x="222" y="0.0" width="66" height="93"/>
-                                            </stackView>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="MFs-ty-uVz" userLabel="Answer_bb" customClass="TPSOundButton" customModule="TotoroTalk" customModuleProvider="target">
+                                                        <rect key="frame" x="-1" y="0.0" width="51" height="93"/>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="MFs-ty-uVz" secondAttribute="trailing" constant="16" id="9vO-ya-3YU"/>
+                                                    <constraint firstAttribute="bottom" secondItem="MFs-ty-uVz" secondAttribute="bottom" id="PQ8-Pa-fKE"/>
+                                                    <constraint firstItem="MFs-ty-uVz" firstAttribute="leading" secondItem="y20-KC-Nxu" secondAttribute="leading" constant="-1" id="QY6-FU-0CE"/>
+                                                    <constraint firstItem="MFs-ty-uVz" firstAttribute="top" secondItem="y20-KC-Nxu" secondAttribute="top" id="UcR-0A-BNy"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="k4R-Eq-6RY">
                                         <rect key="frame" x="0.0" y="202" width="288" height="93"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="b2s-k3-ugE" userLabel="BB Happy" customClass="TPSOundButton" customModule="TotoroTalk" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jzw-Bg-TJY" userLabel="BorderView">
                                                 <rect key="frame" x="0.0" y="0.0" width="66" height="93"/>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ewY-ej-DFF" userLabel="BB want care or feed" customClass="TPSOundButton" customModule="TotoroTalk" customModuleProvider="target">
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="b2s-k3-ugE" userLabel="BB Happy" customClass="TPSOundButton" customModule="TotoroTalk" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="66" height="93"/>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="b2s-k3-ugE" secondAttribute="trailing" id="FgW-hp-GMP"/>
+                                                    <constraint firstItem="b2s-k3-ugE" firstAttribute="leading" secondItem="jzw-Bg-TJY" secondAttribute="leading" id="H77-8t-Zjx"/>
+                                                    <constraint firstAttribute="bottom" secondItem="b2s-k3-ugE" secondAttribute="bottom" id="WcY-uI-9ah"/>
+                                                    <constraint firstItem="b2s-k3-ugE" firstAttribute="top" secondItem="jzw-Bg-TJY" secondAttribute="top" id="wWB-HL-A6t"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="26C-tf-gDj" userLabel="BorderView">
                                                 <rect key="frame" x="74" y="0.0" width="66" height="93"/>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="R5s-gI-lN4" userLabel="BB Sleepy" customClass="TPSOundButton" customModule="TotoroTalk" customModuleProvider="target">
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ewY-ej-DFF" userLabel="BB want care or feed" customClass="TPSOundButton" customModule="TotoroTalk" customModuleProvider="target">
+                                                        <rect key="frame" x="-1" y="0.0" width="67" height="93"/>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="ewY-ej-DFF" secondAttribute="bottom" id="3pf-QN-MEA"/>
+                                                    <constraint firstAttribute="trailing" secondItem="ewY-ej-DFF" secondAttribute="trailing" id="Ahy-Pz-DBM"/>
+                                                    <constraint firstItem="ewY-ej-DFF" firstAttribute="top" secondItem="26C-tf-gDj" secondAttribute="top" id="kcf-jj-Zwy"/>
+                                                    <constraint firstItem="ewY-ej-DFF" firstAttribute="leading" secondItem="26C-tf-gDj" secondAttribute="leading" constant="-1" id="xvK-ep-5PE"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dC8-kb-RpS" userLabel="BorderView">
                                                 <rect key="frame" x="148" y="0.0" width="66" height="93"/>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="aRl-Pg-Tyt" userLabel="BB WakeUp" customClass="TPSOundButton" customModule="TotoroTalk" customModuleProvider="target">
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="R5s-gI-lN4" userLabel="BB Sleepy" customClass="TPSOundButton" customModule="TotoroTalk" customModuleProvider="target">
+                                                        <rect key="frame" x="-1" y="0.0" width="67" height="93"/>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="R5s-gI-lN4" firstAttribute="top" secondItem="dC8-kb-RpS" secondAttribute="top" id="0GS-1u-tN0"/>
+                                                    <constraint firstAttribute="bottom" secondItem="R5s-gI-lN4" secondAttribute="bottom" id="0iA-OR-ks5"/>
+                                                    <constraint firstItem="R5s-gI-lN4" firstAttribute="leading" secondItem="dC8-kb-RpS" secondAttribute="leading" constant="-1" id="CTx-Hf-Lz0"/>
+                                                    <constraint firstAttribute="trailing" secondItem="R5s-gI-lN4" secondAttribute="trailing" id="jiN-0w-jEH"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f8r-jr-18K" userLabel="BorderView">
                                                 <rect key="frame" x="222" y="0.0" width="66" height="93"/>
-                                            </stackView>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="aRl-Pg-Tyt" userLabel="BB WakeUp" customClass="TPSOundButton" customModule="TotoroTalk" customModuleProvider="target">
+                                                        <rect key="frame" x="-1" y="0.0" width="67" height="93"/>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="aRl-Pg-Tyt" firstAttribute="leading" secondItem="f8r-jr-18K" secondAttribute="leading" constant="-1" id="FrA-JF-8oZ"/>
+                                                    <constraint firstItem="aRl-Pg-Tyt" firstAttribute="top" secondItem="f8r-jr-18K" secondAttribute="top" id="RbH-af-Ec0"/>
+                                                    <constraint firstAttribute="trailing" secondItem="aRl-Pg-Tyt" secondAttribute="trailing" id="Zee-uH-d82"/>
+                                                    <constraint firstAttribute="bottom" secondItem="aRl-Pg-Tyt" secondAttribute="bottom" id="d1y-yP-g0U"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="PwZ-lS-xna">
                                         <rect key="frame" x="0.0" y="303" width="288" height="93"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1sU-ME-PdR" userLabel="Portest" customClass="TPSOundButton" customModule="TotoroTalk" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4nT-Aw-73n" userLabel="BorderView">
                                                 <rect key="frame" x="0.0" y="0.0" width="140" height="93"/>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="xwL-XX-5H4" userLabel="Warning" customClass="TPSOundButton" customModule="TotoroTalk" customModuleProvider="target">
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1sU-ME-PdR" userLabel="Portest" customClass="TPSOundButton" customModule="TotoroTalk" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="140" height="93"/>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="1sU-ME-PdR" firstAttribute="leading" secondItem="4nT-Aw-73n" secondAttribute="leading" id="Gq2-JG-TXF"/>
+                                                    <constraint firstAttribute="trailing" secondItem="1sU-ME-PdR" secondAttribute="trailing" id="aJk-j6-IYp"/>
+                                                    <constraint firstAttribute="bottom" secondItem="1sU-ME-PdR" secondAttribute="bottom" id="aWm-I6-u7p"/>
+                                                    <constraint firstItem="1sU-ME-PdR" firstAttribute="top" secondItem="4nT-Aw-73n" secondAttribute="top" id="xMq-GH-Hfl"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="exu-jG-CL1" userLabel="BorderView">
                                                 <rect key="frame" x="148" y="0.0" width="140" height="93"/>
-                                            </stackView>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="xwL-XX-5H4" userLabel="Warning" customClass="TPSOundButton" customModule="TotoroTalk" customModuleProvider="target">
+                                                        <rect key="frame" x="-1" y="0.0" width="141" height="93"/>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="xwL-XX-5H4" secondAttribute="bottom" id="6Yc-uv-fex"/>
+                                                    <constraint firstItem="xwL-XX-5H4" firstAttribute="leading" secondItem="exu-jG-CL1" secondAttribute="leading" constant="-1" id="P6N-Mg-BfS"/>
+                                                    <constraint firstAttribute="trailing" secondItem="xwL-XX-5H4" secondAttribute="trailing" id="R7L-Ed-YCF"/>
+                                                    <constraint firstItem="xwL-XX-5H4" firstAttribute="top" secondItem="exu-jG-CL1" secondAttribute="top" id="fF6-GQ-wKI"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
                                     </stackView>
                                 </subviews>
@@ -110,25 +266,36 @@
                             <constraint firstItem="5hc-Ez-t0H" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" constant="-10" id="wqI-p2-2CK"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Sound board" id="oVm-wX-u9s">
-                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="oCs-QP-uhU"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Sound board" id="oVm-wX-u9s"/>
                     <connections>
                         <outlet property="answer_bb" destination="MFs-ty-uVz" id="XuD-uv-izl"/>
+                        <outlet property="answer_bb_borderView" destination="y20-KC-Nxu" id="8I7-RM-hpd"/>
                         <outlet property="bb_ask_care_food" destination="ewY-ej-DFF" id="fKW-qM-gTt"/>
+                        <outlet property="bb_ask_care_food_borderView" destination="26C-tf-gDj" id="lqv-pR-tzs"/>
                         <outlet property="bb_happy" destination="b2s-k3-ugE" id="Sfl-AW-EEk"/>
+                        <outlet property="bb_happy_borderView" destination="jzw-Bg-TJY" id="BWm-A3-qQt"/>
                         <outlet property="bb_sleepy" destination="R5s-gI-lN4" id="lSq-yg-0mn"/>
+                        <outlet property="bb_sleepy_borderView" destination="dC8-kb-RpS" id="7UM-BE-mR9"/>
                         <outlet property="bb_wakeup" destination="aRl-Pg-Tyt" id="9qD-cm-cdB"/>
+                        <outlet property="bb_wakeup_borderView" destination="f8r-jr-18K" id="GgM-G6-WL3"/>
                         <outlet property="call_partner" destination="Dvd-Gt-NOj" id="Wbc-SL-8fN"/>
+                        <outlet property="call_partner_borderView" destination="mbE-Lf-D8w" id="uRX-Qr-eqf"/>
                         <outlet property="contact" destination="3hh-aa-d3A" id="WNi-EV-UhC"/>
+                        <outlet property="contact_borderView" destination="B0H-Hb-paP" id="QcL-no-J03"/>
                         <outlet property="defence" destination="Vtf-Yk-VPK" id="HZg-T4-qql"/>
+                        <outlet property="defence_borderView" destination="EAB-7T-bNP" id="x6Y-kj-ihp"/>
                         <outlet property="dont_hurt_me" destination="i4R-rU-baJ" id="D9c-a1-2dT"/>
+                        <outlet property="dont_hurt_me_borderView" destination="UeE-Vz-39O" id="Kmi-kf-Tt4"/>
                         <outlet property="feed_or_pet" destination="7Br-Rf-92z" id="N03-VY-rI3"/>
                         <outlet property="feed_or_pet_borderView" destination="vI4-e5-W6A" id="oDS-ep-ez2"/>
                         <outlet property="lone" destination="zWG-pc-Cui" id="8le-Wd-WMw"/>
+                        <outlet property="lone_borderView" destination="6CH-b1-Y2U" id="3JX-aP-MV2"/>
+                        <outlet property="marriage_depute_borderView" destination="acH-DA-neX" id="jvW-uN-SwP"/>
                         <outlet property="marriage_despute" destination="hOq-yv-GJf" id="Zqo-Mo-Nfi"/>
                         <outlet property="protest" destination="1sU-ME-PdR" id="wue-vo-5lW"/>
+                        <outlet property="protest_borderView" destination="4nT-Aw-73n" id="tlW-Lu-wWt"/>
                         <outlet property="warning" destination="xwL-XX-5H4" id="chd-2l-RNT"/>
+                        <outlet property="warning_borderView" destination="exu-jG-CL1" id="CLq-S5-1Zz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

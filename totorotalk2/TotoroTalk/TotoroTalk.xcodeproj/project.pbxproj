@@ -83,6 +83,8 @@
 		BE41537C20771298007F85D3 /* lonely_010.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lonely_010.mp3; sourceTree = "<group>"; };
 		BE41538B207755E5007F85D3 /* TPSOundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TPSOundButton.swift; sourceTree = "<group>"; };
 		BE52917D2077620E00060044 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BE52917F2077928D00060044 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		BE5291802077928D00060044 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		BED3D13D1F107C9C007DB48B /* SoundPlayModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundPlayModalViewController.swift; sourceTree = "<group>"; };
 		BED3D1401F107DF0007DB48B /* TPSound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TPSound.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -430,6 +432,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				BE148E401F0F1320001C8221 /* Base */,
+				BE5291802077928D00060044 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -438,6 +441,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				BE148E451F0F1320001C8221 /* Base */,
+				BE52917F2077928D00060044 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -449,6 +453,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -506,6 +511,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
