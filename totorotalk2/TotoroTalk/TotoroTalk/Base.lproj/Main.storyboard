@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F2073" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="uOP-Ns-Ek5">
+    <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Sound board-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TotoroTalk" customModuleProvider="target" sceneMemberID="viewController">
@@ -19,33 +19,84 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ytw-ft-dkm">
-                                <rect key="frame" x="36" y="318" width="303" height="30"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="5hc-Ez-t0H">
+                                <rect key="frame" x="16" y="74" width="288" height="396"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="dyc-DN-7JP">
-                                        <rect key="frame" x="0.0" y="0.0" width="303" height="30"/>
+                                    <stackView opaque="NO" contentMode="top" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="44J-Wx-NMv">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="93"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfX-hL-M1c">
-                                                <rect key="frame" x="0.0" y="0.0" width="83" height="30"/>
-                                                <state key="normal" title="Wake"/>
-                                                <connections>
-                                                    <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PZB-nd-Jeq"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0La-Qp-C6V">
-                                                <rect key="frame" x="91" y="0.0" width="85" height="30"/>
-                                                <state key="normal" title="Sleep"/>
-                                                <connections>
-                                                    <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eg4-SX-9fx"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R70-db-UQg">
-                                                <rect key="frame" x="184" y="0.0" width="119" height="30"/>
-                                                <state key="normal" title="Button"/>
-                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Dvd-Gt-NOj" userLabel="Call Partner" customClass="TPSOundButton" customModule="TotoroTalk" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="66" height="93"/>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3hh-aa-d3A" userLabel="Contact" customClass="TPSOundButton" customModule="TotoroTalk" customModuleProvider="target">
+                                                <rect key="frame" x="74" y="0.0" width="66" height="93"/>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Vtf-Yk-VPK" userLabel="Defence" customClass="TPSOundButton" customModule="TotoroTalk" customModuleProvider="target">
+                                                <rect key="frame" x="148" y="0.0" width="66" height="93"/>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="i4R-rU-baJ" userLabel="Don't Hurt Me" customClass="TPSOundButton" customModule="TotoroTalk" customModuleProvider="target">
+                                                <rect key="frame" x="222" y="0.0" width="66" height="93"/>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="rCn-h7-PV4">
+                                        <rect key="frame" x="0.0" y="101" width="288" height="93"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vI4-e5-W6A" userLabel="BorderView">
+                                                <rect key="frame" x="0.0" y="0.0" width="66" height="93"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7Br-Rf-92z" userLabel="Feed or Pet" customClass="TPSOundButton" customModule="TotoroTalk" customModuleProvider="target">
+                                                        <rect key="frame" x="-1" y="0.0" width="52" height="93"/>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="7Br-Rf-92z" firstAttribute="top" secondItem="vI4-e5-W6A" secondAttribute="top" id="7CH-vn-w6P"/>
+                                                    <constraint firstItem="7Br-Rf-92z" firstAttribute="leading" secondItem="vI4-e5-W6A" secondAttribute="leading" constant="-1" id="Jh9-yP-0pr"/>
+                                                    <constraint firstAttribute="bottom" secondItem="7Br-Rf-92z" secondAttribute="bottom" id="NvY-ML-hOH"/>
+                                                    <constraint firstAttribute="trailing" secondItem="7Br-Rf-92z" secondAttribute="trailing" constant="15" id="PqO-Dl-7O2"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zWG-pc-Cui" userLabel="Lone" customClass="TPSOundButton" customModule="TotoroTalk" customModuleProvider="target">
+                                                <rect key="frame" x="74" y="0.0" width="66" height="93"/>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hOq-yv-GJf" userLabel="Marriage despute" customClass="TPSOundButton" customModule="TotoroTalk" customModuleProvider="target">
+                                                <rect key="frame" x="148" y="0.0" width="66" height="93"/>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="MFs-ty-uVz" userLabel="Answer_bb" customClass="TPSOundButton" customModule="TotoroTalk" customModuleProvider="target">
+                                                <rect key="frame" x="222" y="0.0" width="66" height="93"/>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="k4R-Eq-6RY">
+                                        <rect key="frame" x="0.0" y="202" width="288" height="93"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="b2s-k3-ugE" userLabel="BB Happy" customClass="TPSOundButton" customModule="TotoroTalk" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="66" height="93"/>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ewY-ej-DFF" userLabel="BB want care or feed" customClass="TPSOundButton" customModule="TotoroTalk" customModuleProvider="target">
+                                                <rect key="frame" x="74" y="0.0" width="66" height="93"/>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="R5s-gI-lN4" userLabel="BB Sleepy" customClass="TPSOundButton" customModule="TotoroTalk" customModuleProvider="target">
+                                                <rect key="frame" x="148" y="0.0" width="66" height="93"/>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="aRl-Pg-Tyt" userLabel="BB WakeUp" customClass="TPSOundButton" customModule="TotoroTalk" customModuleProvider="target">
+                                                <rect key="frame" x="222" y="0.0" width="66" height="93"/>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="PwZ-lS-xna">
+                                        <rect key="frame" x="0.0" y="303" width="288" height="93"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1sU-ME-PdR" userLabel="Portest" customClass="TPSOundButton" customModule="TotoroTalk" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="140" height="93"/>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="xwL-XX-5H4" userLabel="Warning" customClass="TPSOundButton" customModule="TotoroTalk" customModuleProvider="target">
+                                                <rect key="frame" x="148" y="0.0" width="140" height="93"/>
+                                            </stackView>
                                         </subviews>
                                     </stackView>
                                 </subviews>
@@ -53,19 +104,72 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Ytw-ft-dkm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gQ8-hZ-SIR"/>
-                            <constraint firstItem="Ytw-ft-dkm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="khw-jF-PFO"/>
-                            <constraint firstItem="Ytw-ft-dkm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="mg9-E2-aHa"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Ytw-ft-dkm" secondAttribute="trailing" constant="20" id="vQv-Wf-qaa"/>
+                            <constraint firstItem="5hc-Ez-t0H" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="PK1-7K-azl"/>
+                            <constraint firstItem="5hc-Ez-t0H" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="fNa-pV-0yO"/>
+                            <constraint firstItem="5hc-Ez-t0H" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="gEZ-04-Esf"/>
+                            <constraint firstItem="5hc-Ez-t0H" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" constant="-10" id="wqI-p2-2CK"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Sound board" id="oVm-wX-u9s">
+                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="oCs-QP-uhU"/>
+                    </navigationItem>
                     <connections>
-                        <outlet property="sleepButton" destination="0La-Qp-C6V" id="sgD-97-fGs"/>
-                        <outlet property="wakeButton" destination="gfX-hL-M1c" id="vdt-cB-dz6"/>
+                        <outlet property="answer_bb" destination="MFs-ty-uVz" id="XuD-uv-izl"/>
+                        <outlet property="bb_ask_care_food" destination="ewY-ej-DFF" id="fKW-qM-gTt"/>
+                        <outlet property="bb_happy" destination="b2s-k3-ugE" id="Sfl-AW-EEk"/>
+                        <outlet property="bb_sleepy" destination="R5s-gI-lN4" id="lSq-yg-0mn"/>
+                        <outlet property="bb_wakeup" destination="aRl-Pg-Tyt" id="9qD-cm-cdB"/>
+                        <outlet property="call_partner" destination="Dvd-Gt-NOj" id="Wbc-SL-8fN"/>
+                        <outlet property="contact" destination="3hh-aa-d3A" id="WNi-EV-UhC"/>
+                        <outlet property="defence" destination="Vtf-Yk-VPK" id="HZg-T4-qql"/>
+                        <outlet property="dont_hurt_me" destination="i4R-rU-baJ" id="D9c-a1-2dT"/>
+                        <outlet property="feed_or_pet" destination="7Br-Rf-92z" id="N03-VY-rI3"/>
+                        <outlet property="feed_or_pet_borderView" destination="vI4-e5-W6A" id="oDS-ep-ez2"/>
+                        <outlet property="lone" destination="zWG-pc-Cui" id="8le-Wd-WMw"/>
+                        <outlet property="marriage_despute" destination="hOq-yv-GJf" id="Zqo-Mo-Nfi"/>
+                        <outlet property="protest" destination="1sU-ME-PdR" id="wue-vo-5lW"/>
+                        <outlet property="warning" destination="xwL-XX-5H4" id="chd-2l-RNT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1080.8" y="138.98050974512745"/>
+        </scene>
+        <!--Sound Play Modal View Controller-->
+        <scene sceneID="l65-bP-LJ1">
+            <objects>
+                <viewController id="Dm6-qs-6rs" customClass="SoundPlayModalViewController" customModule="TotoroTalk" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hFq-w7-q0a"/>
+                        <viewControllerLayoutGuide type="bottom" id="7qe-97-bdg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yEP-WC-MT5" customClass="SoundPlay">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dix-qq-E6c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2030" y="139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dQp-7t-JTw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uOP-Ns-Ek5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Pq8-Y4-2KL">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="31D-Uc-g1B"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eTf-fS-hAy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141.59999999999999" y="138.98050974512745"/>
         </scene>
     </scenes>
 </document>

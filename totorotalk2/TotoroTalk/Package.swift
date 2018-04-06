@@ -3,7 +3,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "TotoroTalk", 
+    name: "TotoroTalk",
     targets: [],
     dependencies: [
         .Package(url: "https://github.com/Alamofire/Alamofire.git", majorVersion: 4)

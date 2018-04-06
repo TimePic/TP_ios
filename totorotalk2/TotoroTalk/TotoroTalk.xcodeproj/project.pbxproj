@@ -10,10 +10,29 @@
 		BE148E3C1F0F1320001C8221 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE148E3B1F0F1320001C8221 /* AppDelegate.swift */; };
 		BE148E3E1F0F1320001C8221 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE148E3D1F0F1320001C8221 /* ViewController.swift */; };
 		BE148E411F0F1320001C8221 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE148E3F1F0F1320001C8221 /* Main.storyboard */; };
-		BE148E431F0F1320001C8221 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE148E421F0F1320001C8221 /* Assets.xcassets */; };
 		BE148E461F0F1320001C8221 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE148E441F0F1320001C8221 /* LaunchScreen.storyboard */; };
 		BE148E511F0F1320001C8221 /* TotoroTalkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE148E501F0F1320001C8221 /* TotoroTalkTests.swift */; };
 		BE148E5C1F0F1320001C8221 /* TotoroTalkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE148E5B1F0F1320001C8221 /* TotoroTalkUITests.swift */; };
+		BE148E6E1F0F8B04001C8221 /* SoundControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE148E6D1F0F8B04001C8221 /* SoundControl.swift */; };
+		BE41536E20770676007F85D3 /* BaseConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41536D20770676007F85D3 /* BaseConstants.swift */; };
+		BE41537D20771298007F85D3 /* marriage_despute_002.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BE41536F20771297007F85D3 /* marriage_despute_002.mp3 */; };
+		BE41537E20771298007F85D3 /* bb_happy_005.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BE41537020771297007F85D3 /* bb_happy_005.mp3 */; };
+		BE41537F20771298007F85D3 /* contact_008.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BE41537120771297007F85D3 /* contact_008.mp3 */; };
+		BE41538020771298007F85D3 /* dont_hurt_me_012.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BE41537220771298007F85D3 /* dont_hurt_me_012.mp3 */; };
+		BE41538120771298007F85D3 /* protest_013.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BE41537320771298007F85D3 /* protest_013.mp3 */; };
+		BE41538220771298007F85D3 /* mother_answer_bb_feed_care_004.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BE41537420771298007F85D3 /* mother_answer_bb_feed_care_004.mp3 */; };
+		BE41538320771298007F85D3 /* defence_014.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BE41537520771298007F85D3 /* defence_014.mp3 */; };
+		BE41538420771298007F85D3 /* bb_want_feed_care_003.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BE41537620771298007F85D3 /* bb_want_feed_care_003.mp3 */; };
+		BE41538520771298007F85D3 /* feed_pet_009.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BE41537720771298007F85D3 /* feed_pet_009.mp3 */; };
+		BE41538620771298007F85D3 /* bb_sleepy_006.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BE41537820771298007F85D3 /* bb_sleepy_006.mp3 */; };
+		BE41538720771298007F85D3 /* warning_001.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BE41537920771298007F85D3 /* warning_001.mp3 */; };
+		BE41538820771298007F85D3 /* bb_wakeup_007.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BE41537A20771298007F85D3 /* bb_wakeup_007.mp3 */; };
+		BE41538920771298007F85D3 /* call_partner_010.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BE41537B20771298007F85D3 /* call_partner_010.mp3 */; };
+		BE41538A20771298007F85D3 /* lonely_010.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BE41537C20771298007F85D3 /* lonely_010.mp3 */; };
+		BE41538C207755E5007F85D3 /* TPSOundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE41538B207755E5007F85D3 /* TPSOundButton.swift */; };
+		BE52917E2077620E00060044 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE52917D2077620E00060044 /* Assets.xcassets */; };
+		BED3D13E1F107C9C007DB48B /* SoundPlayModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED3D13D1F107C9C007DB48B /* SoundPlayModalViewController.swift */; };
+		BED3D1411F107DF0007DB48B /* TPSound.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED3D1401F107DF0007DB48B /* TPSound.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +57,6 @@
 		BE148E3B1F0F1320001C8221 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE148E3D1F0F1320001C8221 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BE148E401F0F1320001C8221 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BE148E421F0F1320001C8221 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE148E451F0F1320001C8221 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE148E471F0F1320001C8221 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE148E4C1F0F1320001C8221 /* TotoroTalkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TotoroTalkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +65,26 @@
 		BE148E571F0F1320001C8221 /* TotoroTalkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TotoroTalkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE148E5B1F0F1320001C8221 /* TotoroTalkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotoroTalkUITests.swift; sourceTree = "<group>"; };
 		BE148E5D1F0F1320001C8221 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE148E6D1F0F8B04001C8221 /* SoundControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundControl.swift; sourceTree = "<group>"; };
+		BE41536D20770676007F85D3 /* BaseConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseConstants.swift; sourceTree = "<group>"; };
+		BE41536F20771297007F85D3 /* marriage_despute_002.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = marriage_despute_002.mp3; sourceTree = "<group>"; };
+		BE41537020771297007F85D3 /* bb_happy_005.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bb_happy_005.mp3; sourceTree = "<group>"; };
+		BE41537120771297007F85D3 /* contact_008.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = contact_008.mp3; sourceTree = "<group>"; };
+		BE41537220771298007F85D3 /* dont_hurt_me_012.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dont_hurt_me_012.mp3; sourceTree = "<group>"; };
+		BE41537320771298007F85D3 /* protest_013.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = protest_013.mp3; sourceTree = "<group>"; };
+		BE41537420771298007F85D3 /* mother_answer_bb_feed_care_004.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mother_answer_bb_feed_care_004.mp3; sourceTree = "<group>"; };
+		BE41537520771298007F85D3 /* defence_014.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = defence_014.mp3; sourceTree = "<group>"; };
+		BE41537620771298007F85D3 /* bb_want_feed_care_003.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bb_want_feed_care_003.mp3; sourceTree = "<group>"; };
+		BE41537720771298007F85D3 /* feed_pet_009.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = feed_pet_009.mp3; sourceTree = "<group>"; };
+		BE41537820771298007F85D3 /* bb_sleepy_006.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bb_sleepy_006.mp3; sourceTree = "<group>"; };
+		BE41537920771298007F85D3 /* warning_001.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = warning_001.mp3; sourceTree = "<group>"; };
+		BE41537A20771298007F85D3 /* bb_wakeup_007.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bb_wakeup_007.mp3; sourceTree = "<group>"; };
+		BE41537B20771298007F85D3 /* call_partner_010.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = call_partner_010.mp3; sourceTree = "<group>"; };
+		BE41537C20771298007F85D3 /* lonely_010.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lonely_010.mp3; sourceTree = "<group>"; };
+		BE41538B207755E5007F85D3 /* TPSOundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TPSOundButton.swift; sourceTree = "<group>"; };
+		BE52917D2077620E00060044 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BED3D13D1F107C9C007DB48B /* SoundPlayModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundPlayModalViewController.swift; sourceTree = "<group>"; };
+		BED3D1401F107DF0007DB48B /* TPSound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TPSound.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +115,7 @@
 		BE148E2F1F0F131F001C8221 = {
 			isa = PBXGroup;
 			children = (
+				BE148E441F0F1320001C8221 /* LaunchScreen.storyboard */,
 				BE148E3A1F0F1320001C8221 /* TotoroTalk */,
 				BE148E4F1F0F1320001C8221 /* TotoroTalkTests */,
 				BE148E5A1F0F1320001C8221 /* TotoroTalkUITests */,
@@ -97,12 +136,15 @@
 		BE148E3A1F0F1320001C8221 /* TotoroTalk */ = {
 			isa = PBXGroup;
 			children = (
+				BE41536C20770647007F85D3 /* Library */,
+				BED3D13F1F107DDD007DB48B /* models */,
+				BE148E691F0F15E4001C8221 /* ViewControllers */,
 				BE148E6C1F0F1D53001C8221 /* Sotryboards */,
 				BE148E6A1F0F1BE1001C8221 /* Resources */,
-				BE148E691F0F15E4001C8221 /* ViewControllers */,
+				BE52917D2077620E00060044 /* Assets.xcassets */,
 				BE148E3B1F0F1320001C8221 /* AppDelegate.swift */,
-				BE148E421F0F1320001C8221 /* Assets.xcassets */,
 				BE148E471F0F1320001C8221 /* Info.plist */,
+				BE148E6D1F0F8B04001C8221 /* SoundControl.swift */,
 			);
 			path = TotoroTalk;
 			sourceTree = "<group>";
@@ -128,7 +170,9 @@
 		BE148E691F0F15E4001C8221 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				BE41538B207755E5007F85D3 /* TPSOundButton.swift */,
 				BE148E3D1F0F1320001C8221 /* ViewController.swift */,
+				BED3D13D1F107C9C007DB48B /* SoundPlayModalViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -144,6 +188,20 @@
 		BE148E6B1F0F1BF4001C8221 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				BE41537020771297007F85D3 /* bb_happy_005.mp3 */,
+				BE41537820771298007F85D3 /* bb_sleepy_006.mp3 */,
+				BE41537A20771298007F85D3 /* bb_wakeup_007.mp3 */,
+				BE41537620771298007F85D3 /* bb_want_feed_care_003.mp3 */,
+				BE41537B20771298007F85D3 /* call_partner_010.mp3 */,
+				BE41537120771297007F85D3 /* contact_008.mp3 */,
+				BE41537520771298007F85D3 /* defence_014.mp3 */,
+				BE41537220771298007F85D3 /* dont_hurt_me_012.mp3 */,
+				BE41537720771298007F85D3 /* feed_pet_009.mp3 */,
+				BE41537C20771298007F85D3 /* lonely_010.mp3 */,
+				BE41536F20771297007F85D3 /* marriage_despute_002.mp3 */,
+				BE41537420771298007F85D3 /* mother_answer_bb_feed_care_004.mp3 */,
+				BE41537320771298007F85D3 /* protest_013.mp3 */,
+				BE41537920771298007F85D3 /* warning_001.mp3 */,
 			);
 			name = Sounds;
 			sourceTree = "<group>";
@@ -152,9 +210,24 @@
 			isa = PBXGroup;
 			children = (
 				BE148E3F1F0F1320001C8221 /* Main.storyboard */,
-				BE148E441F0F1320001C8221 /* LaunchScreen.storyboard */,
 			);
 			name = Sotryboards;
+			sourceTree = "<group>";
+		};
+		BE41536C20770647007F85D3 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				BE41536D20770676007F85D3 /* BaseConstants.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		BED3D13F1F107DDD007DB48B /* models */ = {
+			isa = PBXGroup;
+			children = (
+				BED3D1401F107DF0007DB48B /* TPSound.swift */,
+			);
+			name = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,23 +293,26 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = TimePic;
 				TargetAttributes = {
 					BE148E371F0F131F001C8221 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = LPU355R3K7;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					BE148E4B1F0F1320001C8221 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = LPU355R3K7;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 						TestTargetID = BE148E371F0F131F001C8221;
 					};
 					BE148E561F0F1320001C8221 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = LPU355R3K7;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 						TestTargetID = BE148E371F0F131F001C8221;
 					};
@@ -267,8 +343,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE41538720771298007F85D3 /* warning_001.mp3 in Resources */,
+				BE41538020771298007F85D3 /* dont_hurt_me_012.mp3 in Resources */,
+				BE41538120771298007F85D3 /* protest_013.mp3 in Resources */,
+				BE41538520771298007F85D3 /* feed_pet_009.mp3 in Resources */,
+				BE41537D20771298007F85D3 /* marriage_despute_002.mp3 in Resources */,
+				BE41538420771298007F85D3 /* bb_want_feed_care_003.mp3 in Resources */,
+				BE52917E2077620E00060044 /* Assets.xcassets in Resources */,
+				BE41538320771298007F85D3 /* defence_014.mp3 in Resources */,
 				BE148E461F0F1320001C8221 /* LaunchScreen.storyboard in Resources */,
-				BE148E431F0F1320001C8221 /* Assets.xcassets in Resources */,
+				BE41538620771298007F85D3 /* bb_sleepy_006.mp3 in Resources */,
+				BE41538920771298007F85D3 /* call_partner_010.mp3 in Resources */,
+				BE41538A20771298007F85D3 /* lonely_010.mp3 in Resources */,
+				BE41538820771298007F85D3 /* bb_wakeup_007.mp3 in Resources */,
+				BE41537E20771298007F85D3 /* bb_happy_005.mp3 in Resources */,
+				BE41538220771298007F85D3 /* mother_answer_bb_feed_care_004.mp3 in Resources */,
+				BE41537F20771298007F85D3 /* contact_008.mp3 in Resources */,
 				BE148E411F0F1320001C8221 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,8 +384,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BED3D1411F107DF0007DB48B /* TPSound.swift in Sources */,
+				BED3D13E1F107C9C007DB48B /* SoundPlayModalViewController.swift in Sources */,
 				BE148E3E1F0F1320001C8221 /* ViewController.swift in Sources */,
+				BE41538C207755E5007F85D3 /* TPSOundButton.swift in Sources */,
+				BE148E6E1F0F8B04001C8221 /* SoundControl.swift in Sources */,
 				BE148E3C1F0F1320001C8221 /* AppDelegate.swift in Sources */,
+				BE41536E20770676007F85D3 /* BaseConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,7 +455,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -368,7 +465,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -411,7 +512,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -419,7 +522,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -454,7 +561,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.timepic.TotoroTalk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -467,7 +575,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.timepic.TotoroTalk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -481,7 +590,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.timepic.TotoroTalkTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TotoroTalk.app/TotoroTalk";
 			};
 			name = Debug;
@@ -496,7 +606,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.timepic.TotoroTalkTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TotoroTalk.app/TotoroTalk";
 			};
 			name = Release;
@@ -510,7 +621,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.timepic.TotoroTalkUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = TotoroTalk;
 			};
 			name = Debug;
@@ -524,7 +636,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.timepic.TotoroTalkUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = TotoroTalk;
 			};
 			name = Release;
@@ -548,6 +661,7 @@
 				BE148E621F0F1320001C8221 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BE148E631F0F1320001C8221 /* Build configuration list for PBXNativeTarget "TotoroTalkTests" */ = {
 			isa = XCConfigurationList;
@@ -556,6 +670,7 @@
 				BE148E651F0F1320001C8221 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BE148E661F0F1320001C8221 /* Build configuration list for PBXNativeTarget "TotoroTalkUITests" */ = {
 			isa = XCConfigurationList;
@@ -564,6 +679,7 @@
 				BE148E681F0F1320001C8221 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
