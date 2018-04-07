@@ -67,18 +67,20 @@ import AVFoundation
         playButton.removeFromSuperview()
         
         soundLabel.text = labelText
-        soundLabel.textAlignment = .center
-        soundLabel.lineBreakMode = .byWordWrapping
-        soundLabel.numberOfLines = 3
 
-        
+        soundLabel.translatesAutoresizingMaskIntoConstraints = false;
+//        soundLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 2).isActive = true;
+//        soundLabel.bottomAnchor.constraint(equalTo: playButton.topAnchor, constant: 2).isActive = true;
+//        soundLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 10).isActive = true;
+//        soundLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: 10).isActive = true;
+//        soundLabel.heightAnchor.constraint(equalToConstant: 40).isActive = true;
         addArrangedSubview(soundLabel)
         
         
+
         let bundle = Bundle(for: type(of: self))
         let soundPlay = UIImage(named: "soundPlay", in: bundle, compatibleWith: self.traitCollection)
-        let soundStop = UIImage(named:"soundStop", in: bundle, compatibleWith: self.traitCollection)
-        
+//        let soundStop = UIImage(named:"soundStop", in: bundle, compatibleWith: self.traitCollection)
         
         playButton.setImage(soundPlay, for: .normal)
         
@@ -93,7 +95,6 @@ import AVFoundation
         playButton.translatesAutoresizingMaskIntoConstraints = false
         playButton.heightAnchor.constraint(equalToConstant: 40).isActive = true
 
-        playButton.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: 10)
      
         // Setup the button action
         playButton.addTarget(self, action: #selector(TPSOundButton.ratingButtonTapped(button:)), for: .touchUpInside)
@@ -131,8 +132,16 @@ import AVFoundation
     }
     
     func setUILabelText(_ labelText: String){
+
+        
+        
         self.labelText = labelText;
         self.soundLabel.text = labelText;
+        soundLabel.textAlignment = .center
+        soundLabel.lineBreakMode = .byWordWrapping
+        soundLabel.numberOfLines = 0
+        soundLabel.minimumScaleFactor = 0.5
+        soundLabel.adjustsFontSizeToFitWidth = true
     }
     
     private func playSound(_ tag: Int){

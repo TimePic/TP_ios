@@ -1,0 +1,23 @@
+/* 
+  Localizable.strings
+  TotoroTalk
+
+  Created by Li Shuzu on 7/04/18.
+  Copyright © 2018 TimePic. All rights reserved.
+*/
+
+//MARK: Sounds buttons
+"Call Partner" = "唤伴侣";
+"Contact" = "唤同伴";
+"Defence" = "防御";
+"Don't Hurt Me" = "怂";
+"Ask Feed or Pet" = "撒娇";
+"Lone" = "孤独";
+"Marriage Despute" = "吵架";
+"Respond Own Baby" = "唤宝宝";
+"Baby Happy" = "宝宝 开心";
+"Baby Ask care or food" = "宝宝 撒娇";
+"Baby Wake Up" = "宝宝 醒来";
+"Baby Sleepy" = "宝宝 困了";
+"Protest" = "抗议";
+"Warning" = "警告";

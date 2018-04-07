@@ -113,47 +113,47 @@ import UIKit
     func initUIButtons(){
 
         call_partner.tag = BaseConstants.tags.UIButton_call_partner;
-        call_partner.setUILabelText("Call Partner")
+        call_partner.setUILabelText("Call Partner".localized)
         
         contact.tag = BaseConstants.tags.UIButton_contact;
-        contact.setUILabelText("Contact")
+        contact.setUILabelText("Contact".localized)
         
         defence.tag = BaseConstants.tags.UIButton_defence;
-        defence.setUILabelText("Defence")
+        defence.setUILabelText("Defence".localized)
         
         
         dont_hurt_me.tag = BaseConstants.tags.UIButton_dont_hurt_me;
-        dont_hurt_me.setUILabelText("Don't Hurt Me")
+        dont_hurt_me.setUILabelText("Don't Hurt Me".localized)
         
         feed_or_pet.tag = BaseConstants.tags.UIButton_feed_or_pet;
-        feed_or_pet.setUILabelText("Ask Feed or Pet")
+        feed_or_pet.setUILabelText("Ask Feed or Pet".localized)
 
         lone.tag = BaseConstants.tags.UIButton_lone;
-        lone.setUILabelText("Lone")
+        lone.setUILabelText("Lone".localized)
         
         marriage_despute.tag = BaseConstants.tags.UIButton_marriage_despute;
-        marriage_despute.setUILabelText("Marriage Despute")
+        marriage_despute.setUILabelText("Marriage Despute".localized)
         
         answer_bb.tag = BaseConstants.tags.UIButton_answer_bb
-        answer_bb.setUILabelText("Respond Babies")
+        answer_bb.setUILabelText("Respond Own Baby".localized)
 
         bb_happy.tag = BaseConstants.tags.UIButton_bb_happy;
-        bb_happy.setUILabelText("Baby Happy")
+        bb_happy.setUILabelText("Baby Happy".localized)
 
         bb_ask_care_food.tag = BaseConstants.tags.UIButton_bb_ask_care_food;
-        bb_ask_care_food.setUILabelText("Baby Ask care or food")
+        bb_ask_care_food.setUILabelText("Baby Ask care or food".localized)
         
         bb_wakeup.tag = BaseConstants.tags.UIButton_bb_wakeup;
-        bb_wakeup.setUILabelText("Baby Wake Up")
+        bb_wakeup.setUILabelText("Baby Wake Up".localized)
         
         bb_sleepy.tag = BaseConstants.tags.UIButton_bb_sleepy;
-        bb_sleepy.setUILabelText("Baby Sleepy")
+        bb_sleepy.setUILabelText("Baby Sleepy".localized)
         
         protest.tag = BaseConstants.tags.UIButton_protest;
-        protest.setUILabelText("Protest")
+        protest.setUILabelText("Protest".localized)
 
         warning.tag = BaseConstants.tags.UIButton_warning;
-        warning.setUILabelText("Warning")
+        warning.setUILabelText("Warning".localized)
         
     }
 }
