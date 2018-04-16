@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nIc-DF-GdG">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ChinchillaMatch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Tqf-qQ-Edp">
+                                <rect key="frame" x="0.0" y="607" width="375" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ABj-6B-KJq"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="gotoPage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q0L-ds-XLI"/>
+                                </connections>
+                            </pageControl>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="99N-WE-iym">
+                                <rect key="frame" x="-16" y="64" width="407" height="533"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Tqf-qQ-Edp" secondAttribute="bottom" constant="10" id="2UL-SL-zkz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Tqf-qQ-Edp" secondAttribute="trailing" id="8bN-Un-pax"/>
+                            <constraint firstItem="Tqf-qQ-Edp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9Zh-Q5-jd8"/>
+                            <constraint firstItem="99N-WE-iym" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Ef5-zW-Ylc"/>
+                            <constraint firstItem="Tqf-qQ-Edp" firstAttribute="top" secondItem="99N-WE-iym" secondAttribute="bottom" constant="10" id="PcQ-sP-If7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="99N-WE-iym" secondAttribute="trailing" constant="-16" id="R2F-hc-Qg2"/>
+                            <constraint firstItem="99N-WE-iym" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="-16" id="wBE-mf-4r9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="p0m-fU-H3e">
+                        <barButtonItem key="leftBarButtonItem" title="Profile" id="rGX-Kb-NXy"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="47r-Hd-onA"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="imageScrollView" destination="99N-WE-iym" id="oVw-WM-3sU"/>
+                        <outlet property="pageControl" destination="Tqf-qQ-Edp" id="1Ee-WP-Chb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="133.5832083958021"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="uJQ-Gm-lpm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nIc-DF-GdG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Qpq-bt-4eW">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="bQ7-x9-4n4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kGD-zF-oDX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="188" y="134"/>
+        </scene>
+    </scenes>
+</document>
