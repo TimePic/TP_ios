@@ -8,12 +8,23 @@
 
 import UIKit
 
-class Chinchilla {
-    var name: String
+class ChinModel {
+    
+    public var name: String
     var photo: UIImage?
     var description: String
     var birthday: Date
-    var enum colour {
+    var sex: ChinModel.sexTypes
+    var colour: ChinModel.colourTypes
+    
+    enum sexTypes {
+        case male
+        case female
+        case unkown
+    }
+    
+    enum colourTypes: Int{
+        
         case standardGrey
         case heteroBeige
         case homozygousBeige
@@ -27,4 +38,24 @@ class Chinchilla {
         case solidViolet
         case BeigeViolet
     }
+    
+    init() {
+        self.name = ""
+        self.photo = nil
+        self.description = ""
+        self.birthday = Date()
+        self.sex = sexTypes.unkown
+        self.colour = colourTypes.BeigeViolet
+    }
+    
+    init(name: String, photo: UIImage?, description: String, birthday: Date, sex: ChinModel.sexTypes, colour: ChinModel.colourTypes) {
+        self.name = name
+        self.photo = photo
+        self.description = description
+        self.birthday = birthday
+        self.sex = sex
+        self.colour = colour
+    }
+    
+    
 }

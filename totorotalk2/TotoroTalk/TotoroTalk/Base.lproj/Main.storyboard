@@ -142,12 +142,12 @@
                                                 <rect key="frame" x="222" y="0.0" width="66" height="93"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="MFs-ty-uVz" userLabel="Answer_bb" customClass="TPSOundButton" customModule="TotoroTalk" customModuleProvider="target">
-                                                        <rect key="frame" x="-1" y="0.0" width="51" height="93"/>
+                                                        <rect key="frame" x="-1" y="0.0" width="67" height="93"/>
                                                     </stackView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="trailing" secondItem="MFs-ty-uVz" secondAttribute="trailing" constant="16" id="9vO-ya-3YU"/>
+                                                    <constraint firstAttribute="trailing" secondItem="MFs-ty-uVz" secondAttribute="trailing" id="9vO-ya-3YU"/>
                                                     <constraint firstAttribute="bottom" secondItem="MFs-ty-uVz" secondAttribute="bottom" id="PQ8-Pa-fKE"/>
                                                     <constraint firstItem="MFs-ty-uVz" firstAttribute="leading" secondItem="y20-KC-Nxu" secondAttribute="leading" constant="-1" id="QY6-FU-0CE"/>
                                                     <constraint firstItem="MFs-ty-uVz" firstAttribute="top" secondItem="y20-KC-Nxu" secondAttribute="top" id="UcR-0A-BNy"/>
@@ -266,7 +266,13 @@
                             <constraint firstItem="5hc-Ez-t0H" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" constant="-10" id="wqI-p2-2CK"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Chinchilla Talk" id="oVm-wX-u9s"/>
+                    <navigationItem key="navigationItem" title="Chinchilla Talk" id="oVm-wX-u9s">
+                        <barButtonItem key="rightBarButtonItem" title="Rate" id="dM5-BX-SAU">
+                            <connections>
+                                <action selector="goToRate:" destination="BYZ-38-t0r" id="4RK-kH-KZV"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="answer_bb" destination="MFs-ty-uVz" id="XuD-uv-izl"/>
                         <outlet property="answer_bb_borderView" destination="y20-KC-Nxu" id="8I7-RM-hpd"/>
@@ -294,6 +300,7 @@
                         <outlet property="marriage_despute" destination="hOq-yv-GJf" id="Zqo-Mo-Nfi"/>
                         <outlet property="protest" destination="1sU-ME-PdR" id="wue-vo-5lW"/>
                         <outlet property="protest_borderView" destination="4nT-Aw-73n" id="tlW-Lu-wWt"/>
+                        <outlet property="rateButton" destination="dM5-BX-SAU" id="E5j-OE-2Yi"/>
                         <outlet property="warning" destination="xwL-XX-5H4" id="chd-2l-RNT"/>
                         <outlet property="warning_borderView" destination="exu-jG-CL1" id="CLq-S5-1Zz"/>
                     </connections>

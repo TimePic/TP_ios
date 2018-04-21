@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BE92EE3C2085544E00993AFC /* ChinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE92EE3B2085544E00993AFC /* ChinModel.swift */; };
+		BE9D7BE6208696750043EEA6 /* ChinchillaProfileControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9D7BE5208696750043EEA6 /* ChinchillaProfileControl.swift */; };
 		BE9EAC352083E410008FFB7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9EAC342083E410008FFB7A /* AppDelegate.swift */; };
 		BE9EAC372083E410008FFB7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9EAC362083E410008FFB7A /* ViewController.swift */; };
 		BE9EAC3A2083E410008FFB7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE9EAC382083E410008FFB7A /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		BE92EE3B2085544E00993AFC /* ChinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChinModel.swift; sourceTree = "<group>"; };
+		BE9D7BE5208696750043EEA6 /* ChinchillaProfileControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChinchillaProfileControl.swift; sourceTree = "<group>"; };
 		BE9EAC312083E410008FFB7A /* ChinchillaMatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChinchillaMatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE9EAC342083E410008FFB7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE9EAC362083E410008FFB7A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +70,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		BE9D7BE72086967C0043EEA6 /* CustomControl */ = {
+			isa = PBXGroup;
+			children = (
+				BE9D7BE5208696750043EEA6 /* ChinchillaProfileControl.swift */,
+			);
+			path = CustomControl;
+			sourceTree = "<group>";
+		};
 		BE9EAC282083E410008FFB7A = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +99,7 @@
 		BE9EAC332083E410008FFB7A /* ChinchillaMatch */ = {
 			isa = PBXGroup;
 			children = (
+				BE9D7BE72086967C0043EEA6 /* CustomControl */,
 				BE92EE3D2085545500993AFC /* Model */,
 				BE9EAC342083E410008FFB7A /* AppDelegate.swift */,
 				BE9EAC362083E410008FFB7A /* ViewController.swift */,
@@ -211,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE9D7BE6208696750043EEA6 /* ChinchillaProfileControl.swift in Sources */,
 				BE9EAC372083E410008FFB7A /* ViewController.swift in Sources */,
 				BE92EE3C2085544E00993AFC /* ChinModel.swift in Sources */,
 				BE9EAC3D2083E410008FFB7A /* ChinchillaMatch.xcdatamodeld in Sources */,

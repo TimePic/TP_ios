@@ -32,6 +32,7 @@ struct BaseConstants {
     struct global{
         static let DocumentsDirectory = FileManager().urls(for: .documentDirectory, in: .userDomainMask).first!
         static let SoundsArchiveURL = DocumentsDirectory.appendingPathComponent("sounds")
+        static let AppId = "id516541985"
     }
     
 }

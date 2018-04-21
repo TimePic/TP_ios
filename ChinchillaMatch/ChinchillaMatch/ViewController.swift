@@ -13,13 +13,13 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     // MARK: - Properties
     
     @IBOutlet weak var imageScrollView: UIScrollView!
-    @IBOutlet weak var pageControl: UIPageControl!
     
     
     let numPages = 6
     var pages = [UIView?]()
     var transitioning = false
-    
+    var data = [ChinModel]();
+    var screenFrame = CGRect();
     
     // MARK: - View Controller Life Cycle
     
@@ -31,6 +31,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
          (Due to this function called each time views are added or removed).
          */
         _ = setupInitialPages
+        
 
     }
     
@@ -39,11 +40,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         // Do any additional setup after loading the view, typically from a nib.
         
         pages = [UIView?](repeating: nil, count: numPages)
-        
-        pageControl.numberOfPages = numPages
-        pageControl.currentPage = 0
-        pageControl.isHidden = true;
-        
+        FakeData()
         imageScrollView.delegate = self;
         imageScrollView.isPagingEnabled = true
         imageScrollView.isScrollEnabled = true
@@ -67,11 +64,12 @@ class ViewController: UIViewController, UIScrollViewDelegate {
          
          Note: Set the scroll view's content size to take into account the top layout guide.
          */
-        
+        screenFrame = imageScrollView.frame
         // Pages are created on demand, load the visible page and next page.
         adjustScrollView()
         loadPage(0)
         loadPage(1)
+
     }()
     
     // MARK: - Utilities
@@ -110,7 +108,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
             self.transitioning = true
             
             // Go to the appropriate page (but with no animation).
-            self.gotoPage(page: self.pageControl.currentPage, animated: false)
+//            self.gotoPage(page: self.pageControl.currentPage, animated: false)
             
             self.transitioning = false
         }
@@ -124,38 +122,22 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         print("Load page\(page)")
         guard page < numPages && page != -1 else { return }
         
-        if pages[page] == nil {
-            if let image = UIImage(named: "\(page + 1)") {
-                // Load the image from our bundle.
-                let newImageView = UIImageView(image: image)
-                newImageView.contentMode = .scaleAspectFit
-                
-                /**
-                 Setup the canvas view to hold the image.
-                 Its frame will be the same as the scroll view's frame.
-                 */
-                var frame = imageScrollView.frame
-                // Offset the frame's X origin to its correct page offset.
-                frame.origin.x = (frame.size.width) * CGFloat(page)
-
-                // Set frame's y origin value to take into account the top layout guide.
-                
-                let canvasView = UIView(frame: frame)
-                imageScrollView.addSubview(canvasView)
-                
-                // Setup the imageView's constraints to snap to all sides of its superview (canvasView).
-                newImageView.translatesAutoresizingMaskIntoConstraints = false
-                canvasView.addSubview(newImageView)
-                
-                NSLayoutConstraint.activate([
-                    (newImageView.leadingAnchor.constraint(equalTo: canvasView.leadingAnchor)),
-                    (newImageView.trailingAnchor.constraint(equalTo: canvasView.trailingAnchor)),
-                    (newImageView.topAnchor.constraint(equalTo: canvasView.topAnchor)),
-                    (newImageView.bottomAnchor.constraint(equalTo: canvasView.bottomAnchor))
-                    ])
-                
-                pages[page] = canvasView
-            }
+        if let mChinMode = ChinModel?(data[page]) {
+            
+            /**
+             Setup the canvas view to hold the image.
+             Its frame will be the same as the scroll view's frame.
+             */
+            var frame = imageScrollView.frame
+            // Offset the frame's X origin to its correct page offset.
+            frame.origin.x = (frame.width) * CGFloat(page)
+  
+            // Set frame's y origin value to take into account the top layout guide.
+            
+            let canvasView = ChinchillaProfileControl(frame: frame)
+            canvasView.chinModel = mChinMode
+            imageScrollView.addSubview(canvasView)
+            pages[page] = canvasView
         }
     }
     
@@ -194,18 +176,18 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         let pageWidth = scrollView.frame.size.width
         let page = floor((scrollView.contentOffset.x - pageWidth / 2) / pageWidth) + 1
 //        print("x: \(scrollView.contentOffset.x) / pageWidth: \(pageWidth)")
-        
-        
-        pageControl.currentPage = Int(page)
-        
-        loadCurrentPages(page: pageControl.currentPage)
+    
+        print("scrollViewDidEndDecelerating: page\(page)")
+        loadCurrentPages(page: Int(page))
     }
     
-    // MARK: - Actions
-    
-    @IBAction func gotoPage(_ sender: UIPageControl) {
-        // User tapped the page control at the bottom, so move to the newer page, with animation.
-        gotoPage(page: sender.currentPage, animated: true)
+     func FakeData(){
+        for index in 1...6 {
+            let item = ChinModel(name: "Chin\(index)", photo: UIImage(named: "\(index)"), description: "Description \(index)!!!!", birthday: Date(timeIntervalSinceReferenceDate: TimeInterval(118800 - 3600*24*index)), sex: ChinModel.sexTypes.male, colour: ChinModel.colourTypes.BeigeViolet);
+            data.append(item)
+        }
+        
+
     }
     
 }

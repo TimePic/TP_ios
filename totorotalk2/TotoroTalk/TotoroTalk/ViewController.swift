@@ -54,6 +54,7 @@ import UIKit
     @IBOutlet weak var protest_borderView: UIView!
     @IBOutlet weak var warning_borderView: UIView!
 
+    @IBOutlet weak var rateButton: UIBarButtonItem!
     
     
     
@@ -111,6 +112,8 @@ import UIKit
 
     
     func initUIButtons(){
+        
+        rateButton.image = UIImage(named: "rate")?.withRenderingMode(.alwaysOriginal);
 
         call_partner.tag = BaseConstants.tags.UIButton_call_partner;
         call_partner.setUILabelText("Call Partner".localized)
@@ -154,7 +157,41 @@ import UIKit
 
         warning.tag = BaseConstants.tags.UIButton_warning;
         warning.setUILabelText("Warning".localized)
+    }
+    
+    @IBAction func goToRate(_ sender: UIBarButtonItem) {
+        
+        let alert = UIAlertController(title: "Rate".localized, message: "Rate on App Store?".localized, preferredStyle: .alert)
+        
+
+        alert.addAction(UIAlertAction(title: NSLocalizedString("Cancel".localized, comment: "No action"), style: .default, handler: { (action: UIAlertAction!) in
+            
+            print("Rate canceled.")
+        }))
+        
+        alert.addAction(UIAlertAction(title: NSLocalizedString("OK".localized, comment: "Default action"), style: .default, handler: { (action: UIAlertAction!) in
+            
+            self.rateApp(appId: BaseConstants.global.AppId) { success in
+                print("RateApp \(success)")
+            }
+        }))
+        
+        
+        self.present(alert, animated: true, completion: nil)
         
     }
+    
+    func rateApp(appId: String, completion: @escaping ((_ success: Bool)->())) {
+        guard let url = URL(string : "itms-apps://itunes.apple.com/app/" + appId) else {
+            completion(false)
+            return
+        }
+        guard #available(iOS 10, *) else {
+            completion(UIApplication.shared.openURL(url))
+            return
+        }
+        UIApplication.shared.open(url, options: [:], completionHandler: completion)
+    }
+    
 }
 
