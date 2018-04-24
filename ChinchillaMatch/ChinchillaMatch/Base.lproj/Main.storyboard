@@ -18,15 +18,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="99N-WE-iym">
-                                <rect key="frame" x="-16" y="64" width="407" height="603"/>
-                            </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0X2-qU-99F" userLabel="Profile View">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="99N-WE-iym" secondAttribute="bottom" id="2s0-Se-3q2"/>
-                            <constraint firstAttribute="trailing" secondItem="99N-WE-iym" secondAttribute="trailing" constant="-16" id="7La-a1-Bq5"/>
-                            <constraint firstItem="99N-WE-iym" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-16" id="WWc-Qv-UuO"/>
-                            <constraint firstItem="99N-WE-iym" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="kvD-8O-eXx"/>
+                            <constraint firstItem="0X2-qU-99F" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="cU3-kx-cfG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0X2-qU-99F" secondAttribute="bottom" id="j79-Vh-DKL"/>
+                            <constraint firstItem="0X2-qU-99F" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="o67-0i-KFS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0X2-qU-99F" secondAttribute="trailing" id="ukC-rw-M8A"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -35,7 +36,7 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="camera" id="47r-Hd-onA"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="imageScrollView" destination="99N-WE-iym" id="oVw-WM-3sU"/>
+                        <outlet property="profileUIView" destination="0X2-qU-99F" id="PpP-D5-Edq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

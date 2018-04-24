@@ -8,7 +8,7 @@
 
 import UIKit
 
-@IBDesignable  class ChinchillaProfileControl: UIView {
+@IBDesignable  class ChinchillaProfileControl: UIStackView {
     
     var photoImageView = UIImageView();
     var nameLabelView = UILabel();
@@ -24,20 +24,28 @@ import UIKit
     }
     
     required init(coder: NSCoder) {
-        super.init(coder: coder)!
+        super.init(coder: coder)
         setUpViews()
     }
     
     func setUpViews(){
-        let margins = self.layoutMarginsGuide
+        
+        self.axis = .vertical
+        self.distribution = .equalSpacing
+        self.alignment = .center
+        self.spacing = 8;
+        
+        
+        let mLayout = self.layoutMarginsGuide
         photoImageView.translatesAutoresizingMaskIntoConstraints = false
         nameLabelView.translatesAutoresizingMaskIntoConstraints = false
         photoImageView.contentMode = .scaleAspectFit
-        nameLabelView.textColor = UIColor.white
-        var frame = self.frame
+//        nameLabelView.textColor = UIColor.white
+        
+        frame = self.frame
         let canvasView = UIView(frame: frame)
-        print("setUpViews: Frame: \(self.frame.origin)")
         canvasView.addSubview(photoImageView)
+        canvasView.restorationIdentifier = "Profile Image"
         
         NSLayoutConstraint.activate([
             (photoImageView.leadingAnchor.constraint(equalTo: canvasView.leadingAnchor)),
@@ -45,16 +53,12 @@ import UIKit
             (photoImageView.topAnchor.constraint(equalTo: canvasView.topAnchor)),
             (photoImageView.bottomAnchor.constraint(equalTo: canvasView.bottomAnchor))
             ])
+
         
         addSubview(canvasView)
         addSubview(nameLabelView)
-        
-        canvasView.widthAnchor.constraint(equalTo: margins.widthAnchor).isActive = true;
-        canvasView.topAnchor.constraint(equalTo: margins.topAnchor).isActive = true;
-        canvasView.bottomAnchor.constraint(equalTo: nameLabelView.topAnchor).isActive = true;
 
-        
-        nameLabelView.bottomAnchor.constraint(equalTo: margins.bottomAnchor, constant: -50).isActive = true
+        nameLabelView.bottomAnchor.constraint(equalTo: mLayout.bottomAnchor, constant: 10).isActive = true
         
         nameLabelView.heightAnchor.constraint(equalToConstant: 100.0).isActive = true
         

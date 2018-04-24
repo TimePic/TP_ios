@@ -8,11 +8,11 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIScrollViewDelegate {
+class ViewController: UIViewController{
 
     // MARK: - Properties
     
-    @IBOutlet weak var imageScrollView: UIScrollView!
+    @IBOutlet weak var profileUIView: UIView!
     
     
     let numPages = 6
@@ -41,11 +41,19 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         
         pages = [UIView?](repeating: nil, count: numPages)
         FakeData()
-        imageScrollView.delegate = self;
-        imageScrollView.isPagingEnabled = true
-        imageScrollView.isScrollEnabled = true
         
-
+        
+        // MARK: - Guestures
+//        Swipe Right
+        let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(swipeHandler(gesture:)))
+        swipeRight.direction = .right
+        self.view.addGestureRecognizer(swipeRight)
+        
+        let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(swipeHandler(gesture:)))
+        swipeLeft.direction = .left
+        self.view.addGestureRecognizer(swipeLeft)
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -64,11 +72,10 @@ class ViewController: UIViewController, UIScrollViewDelegate {
          
          Note: Set the scroll view's content size to take into account the top layout guide.
          */
-        screenFrame = imageScrollView.frame
+        screenFrame = profileUIView.frame
         // Pages are created on demand, load the visible page and next page.
         adjustScrollView()
-        loadPage(0)
-        loadPage(1)
+        loadNext()
 
     }()
     
@@ -82,44 +89,16 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     
     /// Readjust the scroll view's content size in case the layout has changed.
     fileprivate func adjustScrollView() {
-        imageScrollView.contentSize =
-            CGSize(width: imageScrollView.frame.width * CGFloat(numPages),
-                   height: imageScrollView.frame.height)
+//        imageScrollView.contentSize =
+//            CGSize(width: imageScrollView.frame.width * CGFloat(numPages),
+//                   height: imageScrollView.frame.height)
     }
     
-    // MARK: - Transitioning
-    
-    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-        super.viewWillTransition(to: size, with: coordinator)
-        
-        /**
-         Since we transitioned to a different screen size we need to reconfigure the scroll view content.
-         Remove any the pages from our scrollview's content.
-         */
-        removeAnyImages()
-        
-        coordinator.animate(alongsideTransition: nil) { _ in
-            // Adjust the scroll view's contentSize (larger or smaller) depending on the new transition size.
-            self.adjustScrollView()
-            
-            // Clear out and reload the relevant pages.
-            self.pages = [UIView?](repeating: nil, count: self.numPages)
-            
-            self.transitioning = true
-            
-            // Go to the appropriate page (but with no animation).
-//            self.gotoPage(page: self.pageControl.currentPage, animated: false)
-            
-            self.transitioning = false
-        }
-        
-        super.viewWillTransition(to: size, with: coordinator)
-    }
     
     // MARK: - Page Loading
     
     fileprivate func loadPage(_ page: Int) {
-        print("Load page\(page)")
+        print("Load page \(page)")
         guard page < numPages && page != -1 else { return }
         
         if let mChinMode = ChinModel?(data[page]) {
@@ -128,57 +107,22 @@ class ViewController: UIViewController, UIScrollViewDelegate {
              Setup the canvas view to hold the image.
              Its frame will be the same as the scroll view's frame.
              */
-            var frame = imageScrollView.frame
             // Offset the frame's X origin to its correct page offset.
-            frame.origin.x = (frame.width) * CGFloat(page)
   
             // Set frame's y origin value to take into account the top layout guide.
-            
-            let canvasView = ChinchillaProfileControl(frame: frame)
+            screenFrame.origin.y = 0
+            let canvasView = ChinchillaProfileControl(frame: screenFrame)
             canvasView.chinModel = mChinMode
-            imageScrollView.addSubview(canvasView)
+            profileUIView.addSubview(canvasView)
             pages[page] = canvasView
         }
     }
     
-    fileprivate func loadCurrentPages(page: Int) {
-        // Load the visible page and the page on either side of it (to avoid flashes when the user starts scrolling).
-        
-        // Don't load if we are at the beginning or end of the list of pages.
-        guard (page > 0 && page + 1 < numPages) || transitioning else { return }
-        
-        // Remove all of the images and start over.
+    func loadNext(){
+        let ChinId = Int(arc4random_uniform(UInt32(numPages)) + 1)
+        guard ChinId < numPages && ChinId != -1 else { return }
         removeAnyImages()
-        pages = [UIView?](repeating: nil, count: numPages)
-        
-        // Load the appropriate new pages for scrolling.
-        loadPage(Int(page) - 1)
-        loadPage(Int(page))
-        loadPage(Int(page) + 1)
-    }
-    
-    fileprivate func gotoPage(page: Int, animated: Bool) {
-        loadCurrentPages(page: page)
-        
-        // Update the scroll view scroll position to the appropriate page.
-        var bounds = imageScrollView.bounds
-        bounds.origin.x = bounds.width * CGFloat(page)
-        bounds.origin.y = 0
-        imageScrollView.scrollRectToVisible(bounds, animated: animated)
-    }
-    
-    // MARK: - UIScrollViewDelegate
-    
-    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        // Switch the indicator when more than 50% of the previous/next page is visible.
-
-        
-        let pageWidth = scrollView.frame.size.width
-        let page = floor((scrollView.contentOffset.x - pageWidth / 2) / pageWidth) + 1
-//        print("x: \(scrollView.contentOffset.x) / pageWidth: \(pageWidth)")
-    
-        print("scrollViewDidEndDecelerating: page\(page)")
-        loadCurrentPages(page: Int(page))
+        loadPage(ChinId)
     }
     
      func FakeData(){
@@ -189,6 +133,30 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         
 
     }
+    
+    //MARK: - Guesture Actions
+    @objc func swipeHandler(gesture: UIGestureRecognizer) {
+        
+        if let swipeGesture = gesture as? UISwipeGestureRecognizer {
+            
+            switch swipeGesture.direction {
+                
+            case UISwipeGestureRecognizerDirection.right:
+                
+                print("Swiped right")
+                loadNext()
+                
+            case UISwipeGestureRecognizerDirection.left:
+                
+                print("Swiped left")
+                loadNext()
+                
+            default:
+                break
+            }
+        }
+    }
+    
     
 }
 
