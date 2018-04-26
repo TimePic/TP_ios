@@ -10,38 +10,77 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Swipe View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ChinchillaMatch" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SwipeViewController" customModule="ChinchillaMatch" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0X2-qU-99F" userLabel="Profile View">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bU9-dj-KWF">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0X2-qU-99F" userLabel="KolodaView" customClass="CustomKolodaView" customModule="ChinchillaMatch" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstItem="0X2-qU-99F" firstAttribute="top" secondItem="bU9-dj-KWF" secondAttribute="top" id="7CO-n2-Wdc"/>
+                                    <constraint firstItem="0X2-qU-99F" firstAttribute="leading" secondItem="bU9-dj-KWF" secondAttribute="leading" id="94g-n7-zt0"/>
+                                    <constraint firstAttribute="bottom" secondItem="0X2-qU-99F" secondAttribute="bottom" id="DbJ-Dl-nA8"/>
+                                    <constraint firstAttribute="trailing" secondItem="0X2-qU-99F" secondAttribute="trailing" id="cyQ-ua-vN4"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="0X2-qU-99F" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="cU3-kx-cfG"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0X2-qU-99F" secondAttribute="bottom" id="j79-Vh-DKL"/>
-                            <constraint firstItem="0X2-qU-99F" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="o67-0i-KFS"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0X2-qU-99F" secondAttribute="trailing" id="ukC-rw-M8A"/>
+                            <constraint firstItem="bU9-dj-KWF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Gef-jh-OGT"/>
+                            <constraint firstItem="bU9-dj-KWF" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="KCo-eB-3ig"/>
+                            <constraint firstItem="bU9-dj-KWF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Rjx-d8-6Ec"/>
+                            <constraint firstItem="bU9-dj-KWF" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="voG-wn-M1J"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="p0m-fU-H3e">
                         <barButtonItem key="leftBarButtonItem" title="Profile" id="rGX-Kb-NXy"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="47r-Hd-onA"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="47r-Hd-onA">
+                            <connections>
+                                <segue destination="CYs-Hv-4W3" kind="show" id="trb-1w-hqP"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="profileUIView" destination="0X2-qU-99F" id="PpP-D5-Edq"/>
+                        <outlet property="kolodaView" destination="0X2-qU-99F" id="lSv-YL-rwc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1076" y="133.5832083958021"/>
+        </scene>
+        <!--Test View Controller-->
+        <scene sceneID="YUh-VU-YlK">
+            <objects>
+                <viewController id="CYs-Hv-4W3" customClass="TestViewController" customModule="ChinchillaMatch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="coZ-BM-LJR" customClass="Test">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="7x1-xP-E9W">
+                                <rect key="frame" x="67" y="110" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="1ew-0E-iaC"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="7x1-xP-E9W" id="oNW-JW-1pi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vdb-eR-CgR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1842" y="134"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="uJQ-Gm-lpm">
@@ -62,4 +101,7 @@
             <point key="canvasLocation" x="188" y="134"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="2" width="2049" height="1537"/>
+    </resources>
 </document>

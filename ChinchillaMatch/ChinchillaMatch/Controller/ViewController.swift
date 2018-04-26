@@ -7,13 +7,14 @@
 //
 
 import UIKit
+import Koloda
 
 class ViewController: UIViewController{
 
     // MARK: - Properties
     
-    @IBOutlet weak var profileUIView: UIView!
-    
+    @IBOutlet weak var CurrentProfileUIView: UIView!
+     @IBOutlet weak var kolodaView: KolodaView!
     
     let numPages = 6
     var pages = [UIView?]()
@@ -72,7 +73,7 @@ class ViewController: UIViewController{
          
          Note: Set the scroll view's content size to take into account the top layout guide.
          */
-        screenFrame = profileUIView.frame
+        screenFrame = CurrentProfileUIView.frame
         // Pages are created on demand, load the visible page and next page.
         adjustScrollView()
         loadNext()
@@ -113,7 +114,7 @@ class ViewController: UIViewController{
             screenFrame.origin.y = 0
             let canvasView = ChinchillaProfileControl(frame: screenFrame)
             canvasView.chinModel = mChinMode
-            profileUIView.addSubview(canvasView)
+            CurrentProfileUIView.addSubview(canvasView)
             pages[page] = canvasView
         }
     }
@@ -144,7 +145,8 @@ class ViewController: UIViewController{
             case UISwipeGestureRecognizerDirection.right:
                 
                 print("Swiped right")
-                loadNext()
+
+                self.loadNext()
                 
             case UISwipeGestureRecognizerDirection.left:
                 

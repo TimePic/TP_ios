@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5AB5925417CC8094D15B0BE0 /* Pods_ChinchillaMatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BEB395B06287D4D199881C4 /* Pods_ChinchillaMatch.framework */; };
 		BE92EE3C2085544E00993AFC /* ChinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE92EE3B2085544E00993AFC /* ChinModel.swift */; };
 		BE9D7BE6208696750043EEA6 /* ChinchillaProfileControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9D7BE5208696750043EEA6 /* ChinchillaProfileControl.swift */; };
 		BE9EAC352083E410008FFB7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9EAC342083E410008FFB7A /* AppDelegate.swift */; };
@@ -16,6 +17,12 @@
 		BE9EAC3F2083E411008FFB7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE9EAC3E2083E411008FFB7A /* Assets.xcassets */; };
 		BE9EAC422083E411008FFB7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE9EAC402083E411008FFB7A /* LaunchScreen.storyboard */; };
 		BE9EAC4D2083E411008FFB7A /* ChinchillaMatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9EAC4C2083E411008FFB7A /* ChinchillaMatchTests.swift */; };
+		BED0FC86209137B500147217 /* SwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED0FC85209137B500147217 /* SwipeViewController.swift */; };
+		BED0FC8820913CDC00147217 /* CustomKolodaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED0FC8720913CDC00147217 /* CustomKolodaView.swift */; };
+		BED0FC8B209156B400147217 /* OverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BED0FC8A209156B400147217 /* OverlayView.xib */; };
+		BED0FC8D2091687E00147217 /* CMOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED0FC8C2091687E00147217 /* CMOverlayView.swift */; };
+		BED0FC8F20916B6500147217 /* BackgroundKolodaAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED0FC8E20916B6500147217 /* BackgroundKolodaAnimator.swift */; };
+		BED41708208FE4920001BB3F /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED41707208FE4920001BB3F /* TestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		80A5BBB75E82D40D366E5B93 /* Pods-ChinchillaMatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChinchillaMatch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChinchillaMatch/Pods-ChinchillaMatch.debug.xcconfig"; sourceTree = "<group>"; };
+		8BEB395B06287D4D199881C4 /* Pods_ChinchillaMatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChinchillaMatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE92EE3B2085544E00993AFC /* ChinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChinModel.swift; sourceTree = "<group>"; };
 		BE9D7BE5208696750043EEA6 /* ChinchillaProfileControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChinchillaProfileControl.swift; sourceTree = "<group>"; };
 		BE9EAC312083E410008FFB7A /* ChinchillaMatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChinchillaMatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,6 +51,13 @@
 		BE9EAC482083E411008FFB7A /* ChinchillaMatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChinchillaMatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE9EAC4C2083E411008FFB7A /* ChinchillaMatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChinchillaMatchTests.swift; sourceTree = "<group>"; };
 		BE9EAC4E2083E411008FFB7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BED0FC85209137B500147217 /* SwipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeViewController.swift; sourceTree = "<group>"; };
+		BED0FC8720913CDC00147217 /* CustomKolodaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomKolodaView.swift; sourceTree = "<group>"; };
+		BED0FC8A209156B400147217 /* OverlayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OverlayView.xib; sourceTree = "<group>"; };
+		BED0FC8C2091687E00147217 /* CMOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMOverlayView.swift; sourceTree = "<group>"; };
+		BED0FC8E20916B6500147217 /* BackgroundKolodaAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundKolodaAnimator.swift; sourceTree = "<group>"; };
+		BED41707208FE4920001BB3F /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		F9B91DC7F94A06C0F4545324 /* Pods-ChinchillaMatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChinchillaMatch.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChinchillaMatch/Pods-ChinchillaMatch.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AB5925417CC8094D15B0BE0 /* Pods_ChinchillaMatch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +79,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B20F546CC55062024EE1C87 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8BEB395B06287D4D199881C4 /* Pods_ChinchillaMatch.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		80B22C3BC3A3F65207460379 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				80A5BBB75E82D40D366E5B93 /* Pods-ChinchillaMatch.debug.xcconfig */,
+				F9B91DC7F94A06C0F4545324 /* Pods-ChinchillaMatch.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BE869538208FE44700F3866F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BE9EAC362083E410008FFB7A /* ViewController.swift */,
+				BED41707208FE4920001BB3F /* TestViewController.swift */,
+				BED0FC85209137B500147217 /* SwipeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		BE92EE3D2085545500993AFC /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +117,8 @@
 		BE9D7BE72086967C0043EEA6 /* CustomControl */ = {
 			isa = PBXGroup;
 			children = (
+				BED0FC8E20916B6500147217 /* BackgroundKolodaAnimator.swift */,
+				BED0FC8720913CDC00147217 /* CustomKolodaView.swift */,
 				BE9D7BE5208696750043EEA6 /* ChinchillaProfileControl.swift */,
 			);
 			path = CustomControl;
@@ -84,6 +130,8 @@
 				BE9EAC332083E410008FFB7A /* ChinchillaMatch */,
 				BE9EAC4B2083E411008FFB7A /* ChinchillaMatchTests */,
 				BE9EAC322083E410008FFB7A /* Products */,
+				80B22C3BC3A3F65207460379 /* Pods */,
+				7B20F546CC55062024EE1C87 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +147,11 @@
 		BE9EAC332083E410008FFB7A /* ChinchillaMatch */ = {
 			isa = PBXGroup;
 			children = (
+				BED0FC892091568A00147217 /* view */,
+				BE869538208FE44700F3866F /* Controller */,
 				BE9D7BE72086967C0043EEA6 /* CustomControl */,
 				BE92EE3D2085545500993AFC /* Model */,
 				BE9EAC342083E410008FFB7A /* AppDelegate.swift */,
-				BE9EAC362083E410008FFB7A /* ViewController.swift */,
 				BE9EAC382083E410008FFB7A /* Main.storyboard */,
 				BE9EAC3E2083E411008FFB7A /* Assets.xcassets */,
 				BE9EAC402083E411008FFB7A /* LaunchScreen.storyboard */,
@@ -121,6 +170,15 @@
 			path = ChinchillaMatchTests;
 			sourceTree = "<group>";
 		};
+		BED0FC892091568A00147217 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				BED0FC8C2091687E00147217 /* CMOverlayView.swift */,
+				BED0FC8A209156B400147217 /* OverlayView.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -128,9 +186,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BE9EAC512083E411008FFB7A /* Build configuration list for PBXNativeTarget "ChinchillaMatch" */;
 			buildPhases = (
+				81A72A0FD22FFBF3A62C145B /* [CP] Check Pods Manifest.lock */,
 				BE9EAC2D2083E410008FFB7A /* Sources */,
 				BE9EAC2E2083E410008FFB7A /* Frameworks */,
 				BE9EAC2F2083E410008FFB7A /* Resources */,
+				CCBB481A2DB6C283095627D2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -203,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE9EAC422083E411008FFB7A /* LaunchScreen.storyboard in Resources */,
+				BED0FC8B209156B400147217 /* OverlayView.xib in Resources */,
 				BE9EAC3F2083E411008FFB7A /* Assets.xcassets in Resources */,
 				BE9EAC3A2083E410008FFB7A /* Main.storyboard in Resources */,
 			);
@@ -217,15 +278,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		81A72A0FD22FFBF3A62C145B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChinchillaMatch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CCBB481A2DB6C283095627D2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ChinchillaMatch/Pods-ChinchillaMatch-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/Koloda/Koloda.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Koloda.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChinchillaMatch/Pods-ChinchillaMatch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BE9EAC2D2083E410008FFB7A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BED0FC8F20916B6500147217 /* BackgroundKolodaAnimator.swift in Sources */,
 				BE9D7BE6208696750043EEA6 /* ChinchillaProfileControl.swift in Sources */,
+				BED0FC8820913CDC00147217 /* CustomKolodaView.swift in Sources */,
 				BE9EAC372083E410008FFB7A /* ViewController.swift in Sources */,
 				BE92EE3C2085544E00993AFC /* ChinModel.swift in Sources */,
 				BE9EAC3D2083E410008FFB7A /* ChinchillaMatch.xcdatamodeld in Sources */,
+				BED0FC8D2091687E00147217 /* CMOverlayView.swift in Sources */,
+				BED41708208FE4920001BB3F /* TestViewController.swift in Sources */,
+				BED0FC86209137B500147217 /* SwipeViewController.swift in Sources */,
 				BE9EAC352083E410008FFB7A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -384,6 +495,7 @@
 		};
 		BE9EAC522083E411008FFB7A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80A5BBB75E82D40D366E5B93 /* Pods-ChinchillaMatch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -402,6 +514,7 @@
 		};
 		BE9EAC532083E411008FFB7A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9B91DC7F94A06C0F4545324 /* Pods-ChinchillaMatch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
